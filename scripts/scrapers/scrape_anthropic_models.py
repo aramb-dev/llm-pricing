@@ -46,34 +46,46 @@ def scrape_model_comparison():
                 headers = [th.get_text(strip=True) for th in header_row.find_all('th')]
                 print(f"  Headers: {headers}")
             
-            # Get rows
+            # Get rows - the table structure has Feature in first column, then model names as headers
             tbody = table.find('tbody')
             if tbody:
-                for row in tbody.find_all('tr'):
+                rows = tbody.find_all('tr')
+                
+                # If first row contains model names (headers), parse accordingly
+                for row in rows:
                     cells = [td.get_text(strip=True) for td in row.find_all('td')]
                     
                     if not cells:
                         continue
                     
-                    # First cell is usually the model name
-                    model_name = cells[0]
+                    feature = cells[0]  # First cell is the feature name
                     
-                    if model_name not in model_data:
-                        model_data[model_name] = {
-                            'model': model_name,
-                            'context_window': None,
-                            'max_output_tokens': None,
-                            'knowledge_cutoff': None,
-                            'rate_limits': {},
-                            'features': []
-                        }
+                    # Skip non-spec rows
+                    if feature.lower() not in ['context window', 'max output', 'knowledge cutoff', 'training data cutoff']:
+                        continue
                     
-                    # Parse other cells based on headers or content
+                    print(f"  Processing: {feature}")
+                    
+                    # Parse the rest of the cells as model data
                     for i, cell in enumerate(cells[1:], 1):
-                        header = headers[i] if i < len(headers) else f"Column {i}"
+                        # Try to get model name from header
+                        model_name = headers[i] if i < len(headers) else f"Model {i}"
                         
-                        # Look for context window
-                        if re.search(r'context|input', header, re.IGNORECASE):
+                        if not cell or cell == '-' or cell == '—':
+                            continue
+                        
+                        if model_name not in model_data:
+                            model_data[model_name] = {
+                                'model': model_name,
+                                'context_window': None,
+                                'max_output_tokens': None,
+                                'knowledge_cutoff': None,
+                                'training_data_cutoff': None,
+                                'features': []
+                            }
+                        
+                        # Parse based on feature type
+                        if feature.lower() == 'context window':
                             tokens_match = re.search(r'([\d,]+)K?\s+tokens?', cell, re.IGNORECASE)
                             if tokens_match:
                                 tokens = tokens_match.group(1).replace(',', '')
@@ -81,8 +93,7 @@ def scrape_model_comparison():
                                     tokens = str(int(tokens) * 1000)
                                 model_data[model_name]['context_window'] = tokens
                         
-                        # Look for max output tokens
-                        if re.search(r'output|max', header, re.IGNORECASE):
+                        elif feature.lower() == 'max output':
                             tokens_match = re.search(r'([\d,]+)K?\s+tokens?', cell, re.IGNORECASE)
                             if tokens_match:
                                 tokens = tokens_match.group(1).replace(',', '')
@@ -90,85 +101,21 @@ def scrape_model_comparison():
                                     tokens = str(int(tokens) * 1000)
                                 model_data[model_name]['max_output_tokens'] = tokens
                         
-                        # Look for knowledge cutoff
-                        if re.search(r'knowledge|cutoff|training', header, re.IGNORECASE):
-                            date_match = re.search(r'([\w]+\s+\d{4})', cell)
+                        elif 'knowledge cutoff' in feature.lower():
+                            date_match = re.search(r'([\w]+\s+\d{1,2},?\s+\d{4})', cell)
                             if date_match:
                                 model_data[model_name]['knowledge_cutoff'] = date_match.group(1)
                         
-                        # Collect other features
-                        if cell and cell not in [model_name, '-', '—', '']:
-                            if header not in ['Model', 'Pricing']:
-                                model_data[model_name]['features'].append(f"{header}: {cell}")
-                    
-                    print(f"  ✓ {model_name}")
-        
-        # Also scrape text content for additional details
-        text_content = soup.get_text()
-        
-        # Look for rate limits in text
-        rpm_matches = re.findall(r'([\d,]+)\s+(?:requests?|RPM)\s+per\s+minute', text_content, re.IGNORECASE)
-        tpm_matches = re.findall(r'([\d,]+)\s+(?:tokens?|TPM)\s+per\s+minute', text_content, re.IGNORECASE)
+                        elif 'training data cutoff' in feature.lower():
+                            date_match = re.search(r'([\w]+\s+\d{1,2},?\s+\d{4})', cell)
+                            if date_match:
+                                model_data[model_name]['training_data_cutoff'] = date_match.group(1)
         
         return model_data
         
     except Exception as e:
         print(f"✗ Error scraping models: {e}")
         return {}
-
-def scrape_individual_model_pages(model_data):
-    """Try to scrape individual model pages for more details"""
-    base_url = "https://platform.claude.com/docs/en/about-claude/models/"
-    
-    # Common model page slugs
-    model_slugs = {
-        'opus': ['claude-opus-4.5', 'claude-opus-4.1', 'claude-opus-4', 'claude-opus-3'],
-        'sonnet': ['claude-sonnet-4.5', 'claude-sonnet-4', 'claude-sonnet-3.7'],
-        'haiku': ['claude-haiku-4.5', 'claude-haiku-3.5', 'claude-haiku-3']
-    }
-    
-    for category, slugs in model_slugs.items():
-        for slug in slugs:
-            url = f"{base_url}{slug}"
-            print(f"\nTrying {url}...")
-            
-            try:
-                response = requests.get(url, headers=get_headers(), timeout=30, verify=False)
-                
-                if response.status_code == 200:
-                    soup = BeautifulSoup(response.content, 'html.parser')
-                    text = soup.get_text()
-                    
-                    # Extract context window
-                    context_match = re.search(r'([\d,]+)K?\s+(?:token\s+)?context\s+window', text, re.IGNORECASE)
-                    if context_match:
-                        tokens = context_match.group(1).replace(',', '')
-                        if 'K' in text[context_match.start():context_match.end()].upper():
-                            tokens = str(int(tokens) * 1000)
-                        
-                        # Update model data
-                        for model_name in model_data:
-                            if slug.replace('-', ' ').lower() in model_name.lower():
-                                model_data[model_name]['context_window'] = tokens
-                                print(f"  ✓ Updated {model_name} context window: {tokens}")
-                    
-                    # Extract max output
-                    output_match = re.search(r'([\d,]+)K?\s+(?:max\s+)?output\s+tokens?', text, re.IGNORECASE)
-                    if output_match:
-                        tokens = output_match.group(1).replace(',', '')
-                        if 'K' in text[output_match.start():output_match.end()].upper():
-                            tokens = str(int(tokens) * 1000)
-                        
-                        for model_name in model_data:
-                            if slug.replace('-', ' ').lower() in model_name.lower():
-                                model_data[model_name]['max_output_tokens'] = tokens
-                                print(f"  ✓ Updated {model_name} max output: {tokens}")
-                
-            except Exception as e:
-                print(f"  ⚠ {e}")
-                continue
-    
-    return model_data
 
 def main():
     print("=" * 60)
@@ -181,11 +128,10 @@ def main():
     if model_data:
         print(f"\n✓ Found {len(model_data)} models")
         
-        # Try to get more details from individual pages
-        model_data = scrape_individual_model_pages(model_data)
-        
         # Save to JSON
-        output_file = '../../data/anthropic/scraped_model_details.json'
+        import os
+        base_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+        output_file = os.path.join(base_dir, 'data', 'anthropic', 'scraped_model_details.json')
         with open(output_file, 'w', encoding='utf-8') as f:
             json.dump({
                 'models': model_data,
