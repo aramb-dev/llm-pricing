@@ -92,8 +92,10 @@ def main():
     print("Update Anthropic CSV with Model Details")
     print("=" * 60)
     
-    csv_file = '../../data/anthropic/anthropic-pricing.csv'
-    model_details_file = '../../data/anthropic/scraped_model_details.json'
+    import os
+    base_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+    csv_file = os.path.join(base_dir, 'data', 'anthropic', 'anthropic-pricing.csv')
+    model_details_file = os.path.join(base_dir, 'data', 'anthropic', 'scraped_model_details.json')
     
     update_csv_with_details(csv_file, model_details_file)
     

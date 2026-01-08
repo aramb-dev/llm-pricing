@@ -51,36 +51,72 @@ def scrape_pricing_page():
         
         print(f"Found {len(tables)} table(s)")
         
-        # Parse the first table (main pricing table)
-        main_table = tables[0]
-        headers = []
-        header_row = main_table.find('thead')
-        if header_row:
-            headers = [th.get_text(strip=True) for th in header_row.find_all('th')]
-            print(f"Table headers: {headers}")
+        # Parse only the main pricing tables (first 2 tables)
+        # Table 1: Standard pricing with prompt caching
+        # Table 2: Batch pricing
         
-        tbody = main_table.find('tbody')
-        if tbody:
-            for row in tbody.find_all('tr'):
-                cells = [td.get_text(strip=True) for td in row.find_all('td')]
-                if len(cells) >= 5:  # Model, Base Input, Cache Writes (5m), Cache Writes (1h), Cache Hits, Output
+        for table_idx, table in enumerate(tables[:2]):
+            headers = []
+            header_row = table.find('thead')
+            if header_row:
+                headers = [th.get_text(strip=True) for th in header_row.find_all('th')]
+            
+            print(f"\nTable {table_idx + 1} headers: {headers}")
+            
+            tbody = table.find('tbody')
+            if tbody:
+                for row in tbody.find_all('tr'):
+                    cells = [td.get_text(strip=True) for td in row.find_all('td')]
+                    
+                    # Skip empty rows
+                    if not cells or len(cells) < 2:
+                        continue
+                    
+                    # Try to detect the table format
+                    # Main pricing table: Model, Base Input, Cache 5m, Cache 1h, Cache Hits, Output
+                    # Legacy table might be simpler
+                    
                     model_name = cells[0]
-                    base_input = parse_price(cells[1])
-                    cache_write_5m = parse_price(cells[2])
-                    cache_write_1h = parse_price(cells[3])
-                    cache_hits = parse_price(cells[4])
-                    output_tokens = parse_price(cells[5]) if len(cells) > 5 else None
                     
-                    pricing_data.append({
-                        'model': model_name,
-                        'base_input': base_input,
-                        'cache_write_5m': cache_write_5m,
-                        'cache_write_1h': cache_write_1h,
-                        'cache_hits': cache_hits,
-                        'output': output_tokens
-                    })
+                    # Skip rows that don't look like models
+                    if any(skip in model_name.lower() for skip in ['feature', 'tier', 'cost', 'input']):
+                        continue
                     
-                    print(f"  ✓ {model_name}: ${base_input}/${output_tokens}")
+                    # Try to parse as main pricing table
+                    if len(cells) >= 6:
+                        base_input = parse_price(cells[1])
+                        cache_write_5m = parse_price(cells[2])
+                        cache_write_1h = parse_price(cells[3])
+                        cache_hits = parse_price(cells[4])
+                        output_tokens = parse_price(cells[5])
+                        
+                        # Only add if we got valid pricing data
+                        if base_input is not None or output_tokens is not None:
+                            pricing_data.append({
+                                'model': model_name,
+                                'base_input': base_input,
+                                'cache_write_5m': cache_write_5m,
+                                'cache_write_1h': cache_write_1h,
+                                'cache_hits': cache_hits,
+                                'output': output_tokens
+                            })
+                            print(f"  ✓ {model_name}: ${base_input}/${output_tokens}")
+                    
+                    # Handle legacy table (might have fewer columns)
+                    elif len(cells) >= 3:
+                        base_input = parse_price(cells[1])
+                        output_tokens = parse_price(cells[2])
+                        
+                        if base_input is not None or output_tokens is not None:
+                            pricing_data.append({
+                                'model': model_name,
+                                'base_input': base_input,
+                                'cache_write_5m': None,
+                                'cache_write_1h': None,
+                                'cache_hits': None,
+                                'output': output_tokens
+                            })
+                            print(f"  ✓ {model_name}: ${base_input}/${output_tokens} (legacy)")
         
         return pricing_data
         
