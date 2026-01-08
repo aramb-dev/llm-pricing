@@ -1,0 +1,51 @@
+Provider,Model,Source Type,Context Window (Tokens),Input Cost per 1M Tokens (USD),Output Cost per 1M Tokens (USD),Min Tokens,Max Tokens,Rate Limit (Requests/sec),Billing Notes,Documentation URL,Last Updated
+Google,Gemini 3 Pro Preview,Standard,1048576,2.0,12.0,,65536,,Prompts <= 200k tokens; Output includes thinking tokens,https://ai.google.dev/gemini-api/docs/pricing,2026-01-08
+Google,Gemini 3 Pro Preview,Standard (>200k),1048576,4.0,18.0,,65536,,Prompts > 200k tokens; Output includes thinking tokens,https://ai.google.dev/gemini-api/docs/pricing,2026-01-08
+Google,Gemini 3 Pro Preview,Cache Write,1048576,0.2,,,65536,,Prompts <= 200k tokens; Storage: $4.50/1M tokens/hour,https://ai.google.dev/gemini-api/docs/pricing,2026-01-08
+Google,Gemini 3 Pro Preview,Cache Write (>200k),1048576,0.4,,,65536,,Prompts > 200k tokens; Storage: $4.50/1M tokens/hour,https://ai.google.dev/gemini-api/docs/pricing,2026-01-08
+Google,Gemini 3 Pro Preview,Batch,1048576,1.0,6.0,,65536,,Prompts <= 200k tokens; Output includes thinking tokens,https://ai.google.dev/gemini-api/docs/pricing,2026-01-08
+Google,Gemini 3 Pro Preview,Batch (>200k),1048576,2.0,9.0,,65536,,Prompts > 200k tokens; Output includes thinking tokens,https://ai.google.dev/gemini-api/docs/pricing,2026-01-08
+Google,Gemini 3 Flash Preview,Standard,1048576,0.5,3.0,,65536,,Text/image/video input; Output includes thinking tokens,https://ai.google.dev/gemini-api/docs/pricing,2026-01-08
+Google,Gemini 3 Flash Preview,Standard (Audio),1048576,1.0,3.0,,65536,,Audio input; Output includes thinking tokens,https://ai.google.dev/gemini-api/docs/pricing,2026-01-08
+Google,Gemini 3 Flash Preview,Cache Write,1048576,0.05,,,65536,,Text/image/video; Storage: $1.00/1M tokens/hour,https://ai.google.dev/gemini-api/docs/pricing,2026-01-08
+Google,Gemini 3 Flash Preview,Cache Write (Audio),1048576,0.1,,,65536,,Audio; Storage: $1.00/1M tokens/hour,https://ai.google.dev/gemini-api/docs/pricing,2026-01-08
+Google,Gemini 3 Flash Preview,Batch,1048576,0.25,1.5,,65536,,Text/image/video input; Output includes thinking tokens,https://ai.google.dev/gemini-api/docs/pricing,2026-01-08
+Google,Gemini 3 Flash Preview,Batch (Audio),1048576,0.5,1.5,,65536,,Audio input; Output includes thinking tokens,https://ai.google.dev/gemini-api/docs/pricing,2026-01-08
+Google,Gemini 3 Pro Image Preview,Standard,65536,2.0,12.0,,32768,,Text/image input; Text output pricing,https://ai.google.dev/gemini-api/docs/pricing,2026-01-08
+Google,Gemini 3 Pro Image Preview,Standard (Image Output),65536,2.0,120.0,,32768,,"Image output: $0.134 per 1K/2K image, $0.24 per 4K image",https://ai.google.dev/gemini-api/docs/pricing,2026-01-08
+Google,Gemini 3 Pro Image Preview,Batch,65536,1.0,6.0,,32768,,Text input/output pricing,https://ai.google.dev/gemini-api/docs/pricing,2026-01-08
+Google,Gemini 3 Pro Image Preview,Batch (Image Output),65536,1.0,60.0,,32768,,"Image output: $0.067 per 1K/2K image, $0.12 per 4K image",https://ai.google.dev/gemini-api/docs/pricing,2026-01-08
+Google,Gemini 2.5 Pro,Standard,1048576,1.25,10.0,,65536,,Prompts <= 200k tokens; Output includes thinking tokens,https://ai.google.dev/gemini-api/docs/pricing,2026-01-08
+Google,Gemini 2.5 Pro,Standard (>200k),1048576,2.5,15.0,,65536,,Prompts > 200k tokens; Output includes thinking tokens,https://ai.google.dev/gemini-api/docs/pricing,2026-01-08
+Google,Gemini 2.5 Pro,Cache Write,1048576,0.125,,,65536,,Prompts <= 200k tokens; Storage: $4.50/1M tokens/hour,https://ai.google.dev/gemini-api/docs/pricing,2026-01-08
+Google,Gemini 2.5 Pro,Cache Write (>200k),1048576,0.25,,,65536,,Prompts > 200k tokens; Storage: $4.50/1M tokens/hour,https://ai.google.dev/gemini-api/docs/pricing,2026-01-08
+Google,Gemini 2.5 Pro,Batch,1048576,0.625,5.0,,65536,,Prompts <= 200k tokens; Output includes thinking tokens,https://ai.google.dev/gemini-api/docs/pricing,2026-01-08
+Google,Gemini 2.5 Pro,Batch (>200k),1048576,1.25,7.5,,65536,,Prompts > 200k tokens; Output includes thinking tokens,https://ai.google.dev/gemini-api/docs/pricing,2026-01-08
+Google,Gemini 2.5 Flash,Standard,1048576,0.3,2.5,,65536,,Text/image/video input; Output includes thinking tokens,https://ai.google.dev/gemini-api/docs/pricing,2026-01-08
+Google,Gemini 2.5 Flash,Standard (Audio),1048576,1.0,2.5,,65536,,Audio input; Output includes thinking tokens,https://ai.google.dev/gemini-api/docs/pricing,2026-01-08
+Google,Gemini 2.5 Flash,Cache Write,1048576,0.03,,,65536,,Text/image/video; Storage: $1.00/1M tokens/hour,https://ai.google.dev/gemini-api/docs/pricing,2026-01-08
+Google,Gemini 2.5 Flash,Cache Write (Audio),1048576,0.1,,,65536,,Audio; Storage: $1.00/1M tokens/hour,https://ai.google.dev/gemini-api/docs/pricing,2026-01-08
+Google,Gemini 2.5 Flash,Batch,1048576,0.15,1.25,,65536,,Text/image/video input; Output includes thinking tokens,https://ai.google.dev/gemini-api/docs/pricing,2026-01-08
+Google,Gemini 2.5 Flash,Batch (Audio),1048576,0.5,1.25,,65536,,Audio input; Output includes thinking tokens,https://ai.google.dev/gemini-api/docs/pricing,2026-01-08
+Google,Gemini 2.5 Flash-Lite,Standard,1048576,0.1,0.4,,65536,,Text/image/video input; Output includes thinking tokens,https://ai.google.dev/gemini-api/docs/pricing,2026-01-08
+Google,Gemini 2.5 Flash-Lite,Standard (Audio),1048576,0.3,0.4,,65536,,Audio input; Output includes thinking tokens,https://ai.google.dev/gemini-api/docs/pricing,2026-01-08
+Google,Gemini 2.5 Flash-Lite,Cache Write,1048576,0.01,,,65536,,Text/image/video; Storage: $1.00/1M tokens/hour,https://ai.google.dev/gemini-api/docs/pricing,2026-01-08
+Google,Gemini 2.5 Flash-Lite,Cache Write (Audio),1048576,0.03,,,65536,,Audio; Storage: $1.00/1M tokens/hour,https://ai.google.dev/gemini-api/docs/pricing,2026-01-08
+Google,Gemini 2.5 Flash-Lite,Batch,1048576,0.05,0.2,,65536,,Text/image/video input; Output includes thinking tokens,https://ai.google.dev/gemini-api/docs/pricing,2026-01-08
+Google,Gemini 2.5 Flash-Lite,Batch (Audio),1048576,0.15,0.2,,65536,,Audio input; Output includes thinking tokens,https://ai.google.dev/gemini-api/docs/pricing,2026-01-08
+Google,Gemini 2.0 Flash,Standard,1048576,0.1,0.4,,8192,,Text/image/video input,https://ai.google.dev/gemini-api/docs/pricing,2026-01-08
+Google,Gemini 2.0 Flash,Standard (Audio),1048576,0.7,0.4,,8192,,Audio input,https://ai.google.dev/gemini-api/docs/pricing,2026-01-08
+Google,Gemini 2.0 Flash,Cache Write,1048576,0.025,,,8192,,Text/image/video; Storage: $1.00/1M tokens/hour,https://ai.google.dev/gemini-api/docs/pricing,2026-01-08
+Google,Gemini 2.0 Flash,Cache Write (Audio),1048576,0.175,,,8192,,Audio; Storage: $1.00/1M tokens/hour,https://ai.google.dev/gemini-api/docs/pricing,2026-01-08
+Google,Gemini 2.0 Flash,Batch,1048576,0.05,0.2,,8192,,Text/image/video input,https://ai.google.dev/gemini-api/docs/pricing,2026-01-08
+Google,Gemini 2.0 Flash,Batch (Audio),1048576,0.35,0.2,,8192,,Audio input,https://ai.google.dev/gemini-api/docs/pricing,2026-01-08
+Google,Gemini 2.0 Flash-Lite,Standard,1048576,0.075,0.3,,8192,,,https://ai.google.dev/gemini-api/docs/pricing,2026-01-08
+Google,Gemini 2.0 Flash-Lite,Batch,1048576,0.0375,0.15,,8192,,,https://ai.google.dev/gemini-api/docs/pricing,2026-01-08
+Google,Gemini Embedding,Standard,,0.15,,,,,Embeddings model,https://ai.google.dev/gemini-api/docs/pricing,2026-01-08
+Google,Gemini Embedding,Batch,,0.075,,,,,Embeddings model,https://ai.google.dev/gemini-api/docs/pricing,2026-01-08
+Google,Imagen 4 Fast,Image Generation,,,,,,,$0.02 per image,https://ai.google.dev/gemini-api/docs/pricing,2026-01-08
+Google,Imagen 4 Standard,Image Generation,,,,,,,$0.04 per image,https://ai.google.dev/gemini-api/docs/pricing,2026-01-08
+Google,Imagen 4 Ultra,Image Generation,,,,,,,$0.06 per image,https://ai.google.dev/gemini-api/docs/pricing,2026-01-08
+Google,Imagen 3,Image Generation,,,,,,,$0.03 per image,https://ai.google.dev/gemini-api/docs/pricing,2026-01-08
+Google,Veo 3.1 Standard,Video Generation,,,,,,,$0.40 per second (with audio),https://ai.google.dev/gemini-api/docs/pricing,2026-01-08
+Google,Veo 3.1 Fast,Video Generation,,,,,,,$0.15 per second (with audio),https://ai.google.dev/gemini-api/docs/pricing,2026-01-08
