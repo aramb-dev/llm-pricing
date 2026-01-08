@@ -1,9 +1,133 @@
 {
   "rate_limits": {
-    "tier1": {},
-    "tier2": {},
-    "tier3": {},
-    "tier4": {}
+    "tier1": {
+      "Claude Sonnet 4.x": {
+        "rpm": "50",
+        "itpm": "30,000",
+        "otpm": "8,000"
+      },
+      "Claude Sonnet 3.7 ()": {
+        "rpm": "50",
+        "itpm": "20,000",
+        "otpm": "8,000"
+      },
+      "Claude Haiku 4.5": {
+        "rpm": "50",
+        "itpm": "50,000",
+        "otpm": "10,000"
+      },
+      "Claude Haiku 3.5 ()": {
+        "rpm": "50",
+        "itpm": "50,000",
+        "otpm": "10,000"
+      },
+      "Claude Haiku 3": {
+        "rpm": "50",
+        "itpm": "50,000",
+        "otpm": "10,000"
+      },
+      "Claude Opus 4.x": {
+        "rpm": "50",
+        "itpm": "30,000",
+        "otpm": "8,000"
+      }
+    },
+    "tier2": {
+      "Claude Sonnet 4.x": {
+        "rpm": "1,000",
+        "itpm": "450,000",
+        "otpm": "90,000"
+      },
+      "Claude Sonnet 3.7 ()": {
+        "rpm": "1,000",
+        "itpm": "40,000",
+        "otpm": "16,000"
+      },
+      "Claude Haiku 4.5": {
+        "rpm": "1,000",
+        "itpm": "450,000",
+        "otpm": "90,000"
+      },
+      "Claude Haiku 3.5 ()": {
+        "rpm": "1,000",
+        "itpm": "100,000",
+        "otpm": "20,000"
+      },
+      "Claude Haiku 3": {
+        "rpm": "1,000",
+        "itpm": "100,000",
+        "otpm": "20,000"
+      },
+      "Claude Opus 4.x": {
+        "rpm": "1,000",
+        "itpm": "450,000",
+        "otpm": "90,000"
+      }
+    },
+    "tier3": {
+      "Claude Sonnet 4.x": {
+        "rpm": "2,000",
+        "itpm": "800,000",
+        "otpm": "160,000"
+      },
+      "Claude Sonnet 3.7 ()": {
+        "rpm": "2,000",
+        "itpm": "80,000",
+        "otpm": "32,000"
+      },
+      "Claude Haiku 4.5": {
+        "rpm": "2,000",
+        "itpm": "1,000,000",
+        "otpm": "200,000"
+      },
+      "Claude Haiku 3.5 ()": {
+        "rpm": "2,000",
+        "itpm": "200,000",
+        "otpm": "40,000"
+      },
+      "Claude Haiku 3": {
+        "rpm": "2,000",
+        "itpm": "200,000",
+        "otpm": "40,000"
+      },
+      "Claude Opus 4.x": {
+        "rpm": "2,000",
+        "itpm": "800,000",
+        "otpm": "160,000"
+      }
+    },
+    "tier4": {
+      "Claude Sonnet 4.x": {
+        "rpm": "4,000",
+        "itpm": "2,000,000",
+        "otpm": "400,000"
+      },
+      "Claude Sonnet 3.7 ()": {
+        "rpm": "4,000",
+        "itpm": "200,000",
+        "otpm": "80,000"
+      },
+      "Claude Haiku 4.5": {
+        "rpm": "4,000",
+        "itpm": "4,000,000",
+        "otpm": "800,000"
+      },
+      "Claude Haiku 3.5 ()": {
+        "rpm": "4,000",
+        "itpm": "400,000",
+        "otpm": "80,000"
+      },
+      "Claude Haiku 3": {
+        "rpm": "4,000",
+        "itpm": "400,000",
+        "otpm": "80,000"
+      },
+      "Claude Opus 4.x": {
+        "rpm": "4,000",
+        "itpm": "2,000,000",
+        "otpm": "400,000"
+      }
+    }
   },
-  "scraped_at": "2026-01-08T10:15:59.412945"
+  "scraped_at": "2026-01-08T10:24:45.337091"
 }
