@@ -1,0 +1,29 @@
+{
+  "models": {
+    "Claude Sonnet 4.5": {
+      "model": "Claude Sonnet 4.5",
+      "context_window": "200000",
+      "max_output_tokens": "64000",
+      "knowledge_cutoff": null,
+      "training_data_cutoff": null,
+      "features": []
+    },
+    "Claude Haiku 4.5": {
+      "model": "Claude Haiku 4.5",
+      "context_window": "200000",
+      "max_output_tokens": "64000",
+      "knowledge_cutoff": null,
+      "training_data_cutoff": null,
+      "features": []
+    },
+    "Claude Opus 4.5": {
+      "model": "Claude Opus 4.5",
+      "context_window": "200000",
+      "max_output_tokens": "64000",
+      "knowledge_cutoff": null,
+      "training_data_cutoff": null,
+      "features": []
+    }
+  },
+  "scraped_at": "2026-01-08T09:15:39.962639"
+}

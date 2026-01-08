@@ -1,0 +1,93 @@
+{
+  "pricing": [
+    {
+      "model": "Claude Opus 4.5",
+      "base_input": 5.0,
+      "cache_write_5m": 6.25,
+      "cache_write_1h": 10.0,
+      "cache_hits": 0.5,
+      "output": 25.0
+    },
+    {
+      "model": "Claude Opus 4.1",
+      "base_input": 15.0,
+      "cache_write_5m": 18.75,
+      "cache_write_1h": 30.0,
+      "cache_hits": 1.5,
+      "output": 75.0
+    },
+    {
+      "model": "Claude Opus 4",
+      "base_input": 15.0,
+      "cache_write_5m": 18.75,
+      "cache_write_1h": 30.0,
+      "cache_hits": 1.5,
+      "output": 75.0
+    },
+    {
+      "model": "Claude Sonnet 4.5",
+      "base_input": 3.0,
+      "cache_write_5m": 3.75,
+      "cache_write_1h": 6.0,
+      "cache_hits": 0.3,
+      "output": 15.0
+    },
+    {
+      "model": "Claude Sonnet 4",
+      "base_input": 3.0,
+      "cache_write_5m": 3.75,
+      "cache_write_1h": 6.0,
+      "cache_hits": 0.3,
+      "output": 15.0
+    },
+    {
+      "model": "Claude Sonnet 3.7 (deprecated)",
+      "base_input": 3.0,
+      "cache_write_5m": 3.75,
+      "cache_write_1h": 6.0,
+      "cache_hits": 0.3,
+      "output": 15.0
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "base_input": 1.0,
+      "cache_write_5m": 1.25,
+      "cache_write_1h": 2.0,
+      "cache_hits": 0.1,
+      "output": 5.0
+    },
+    {
+      "model": "Claude Haiku 3.5",
+      "base_input": 0.8,
+      "cache_write_5m": 1.0,
+      "cache_write_1h": 1.6,
+      "cache_hits": 0.08,
+      "output": 4.0
+    },
+    {
+      "model": "Claude Opus 3 (deprecated)",
+      "base_input": 15.0,
+      "cache_write_5m": 18.75,
+      "cache_write_1h": 30.0,
+      "cache_hits": 1.5,
+      "output": 75.0
+    },
+    {
+      "model": "Claude Haiku 3",
+      "base_input": 0.25,
+      "cache_write_5m": 0.3,
+      "cache_write_1h": 0.5,
+      "cache_hits": 0.03,
+      "output": 1.25
+    }
+  ],
+  "model_specs": {
+    "Context window": {
+      "context_window": "200000"
+    },
+    "Max output": {
+      "context_window": "64000"
+    }
+  },
+  "scraped_at": "2026-01-08T09:13:16.091739"
+}
