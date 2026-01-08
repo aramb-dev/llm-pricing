@@ -1,49 +1,49 @@
 Provider,Model,Source Type,Context Window (Tokens),Input Cost per 1M Tokens (USD),Output Cost per 1M Tokens (USD),Min Tokens,Max Tokens,Rate Limit (Requests/sec),Billing Notes,Documentation URL,Last Updated
-Anthropic,Claude Opus 4.5,Standard,200000,5.0,25.0,,64000,,,https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
-Anthropic,Claude Opus 4.5,Cache Write (5min),200000,6.25,25.0,,64000,,Prompt caching - 5 minute duration,https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
-Anthropic,Claude Opus 4.5,Cache Write (1hour),200000,10.0,25.0,,64000,,Prompt caching - 1 hour duration,https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
-Anthropic,Claude Opus 4.5,Cache Hit,200000,0.5,25.0,,64000,,Prompt caching - cache read tokens,https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
-Anthropic,Claude Opus 4.5,Batch,200000,2.5,12.5,,64000,,Batch API pricing,https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
-Anthropic,Claude Opus 4.1,Standard,200000,15.0,75.0,,64000,,,https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
-Anthropic,Claude Opus 4.1,Cache Write (5min),200000,18.75,75.0,,64000,,Prompt caching - 5 minute duration,https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
-Anthropic,Claude Opus 4.1,Cache Write (1hour),200000,30.0,75.0,,64000,,Prompt caching - 1 hour duration,https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
-Anthropic,Claude Opus 4.1,Cache Hit,200000,1.5,75.0,,64000,,Prompt caching - cache read tokens,https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
-Anthropic,Claude Opus 4.1,Batch,200000,7.5,37.5,,64000,,Batch API pricing,https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
-Anthropic,Claude Opus 4,Standard,200000,15.0,75.0,,64000,,,https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
-Anthropic,Claude Opus 4,Cache Write (5min),200000,18.75,75.0,,64000,,Prompt caching - 5 minute duration,https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
-Anthropic,Claude Opus 4,Cache Write (1hour),200000,30.0,75.0,,64000,,Prompt caching - 1 hour duration,https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
-Anthropic,Claude Opus 4,Cache Hit,200000,1.5,75.0,,64000,,Prompt caching - cache read tokens,https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
-Anthropic,Claude Opus 4,Batch,200000,7.5,37.5,,64000,,Batch API pricing,https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
-Anthropic,Claude Sonnet 4.5,Standard,200000,3.0,15.0,,64000,,,https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
-Anthropic,Claude Sonnet 4.5,Cache Write (5min),200000,3.75,15.0,,64000,,Prompt caching - 5 minute duration,https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
-Anthropic,Claude Sonnet 4.5,Cache Write (1hour),200000,6.0,15.0,,64000,,Prompt caching - 1 hour duration,https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
-Anthropic,Claude Sonnet 4.5,Cache Hit,200000,0.3,15.0,,64000,,Prompt caching - cache read tokens,https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
-Anthropic,Claude Sonnet 4.5,Batch,200000,1.5,7.5,,64000,,Batch API pricing,https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
-Anthropic,Claude Sonnet 4,Standard,200000,3.0,15.0,,64000,,,https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
-Anthropic,Claude Sonnet 4,Cache Write (5min),200000,3.75,15.0,,64000,,Prompt caching - 5 minute duration,https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
-Anthropic,Claude Sonnet 4,Cache Write (1hour),200000,6.0,15.0,,64000,,Prompt caching - 1 hour duration,https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
-Anthropic,Claude Sonnet 4,Cache Hit,200000,0.3,15.0,,64000,,Prompt caching - cache read tokens,https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
-Anthropic,Claude Sonnet 4,Batch,200000,1.5,7.5,,64000,,Batch API pricing,https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
-Anthropic,Claude Sonnet 3.7 (deprecated),Standard,200000,3.0,15.0,,64000,,,https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
-Anthropic,Claude Sonnet 3.7 (deprecated),Cache Write (5min),200000,3.75,15.0,,64000,,Prompt caching - 5 minute duration,https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
-Anthropic,Claude Sonnet 3.7 (deprecated),Cache Write (1hour),200000,6.0,15.0,,64000,,Prompt caching - 1 hour duration,https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
-Anthropic,Claude Sonnet 3.7 (deprecated),Cache Hit,200000,0.3,15.0,,64000,,Prompt caching - cache read tokens,https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
-Anthropic,Claude Sonnet 3.7 (deprecated),Batch,200000,1.5,7.5,,64000,,Batch API pricing,https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
-Anthropic,Claude Haiku 4.5,Standard,200000,1.0,5.0,,64000,,,https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
-Anthropic,Claude Haiku 4.5,Cache Write (5min),200000,1.25,5.0,,64000,,Prompt caching - 5 minute duration,https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
-Anthropic,Claude Haiku 4.5,Cache Write (1hour),200000,2.0,5.0,,64000,,Prompt caching - 1 hour duration,https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
-Anthropic,Claude Haiku 4.5,Cache Hit,200000,0.1,5.0,,64000,,Prompt caching - cache read tokens,https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
-Anthropic,Claude Haiku 4.5,Batch,200000,0.5,2.5,,64000,,Batch API pricing,https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
-Anthropic,Claude Haiku 3.5,Standard,200000,0.8,4.0,,64000,,,https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
-Anthropic,Claude Haiku 3.5,Cache Write (5min),200000,1.0,4.0,,64000,,Prompt caching - 5 minute duration,https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
-Anthropic,Claude Haiku 3.5,Cache Write (1hour),200000,1.6,4.0,,64000,,Prompt caching - 1 hour duration,https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
-Anthropic,Claude Haiku 3.5,Cache Hit,200000,0.08,4.0,,64000,,Prompt caching - cache read tokens,https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
-Anthropic,Claude Haiku 3.5,Batch,200000,0.4,2.0,,64000,,Batch API pricing,https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
+Anthropic,Claude Opus 4.5,Standard,200000,5.0,25.0,,64000,,"Rate limits: 4,000 RPM | 2,000,000 ITPM | 400,000 OTPM (Tier 4)",https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
+Anthropic,Claude Opus 4.5,Cache Write (5min),200000,6.25,25.0,,64000,,"Prompt caching - 5 minute duration; Rate limits: 4,000 RPM | 2,000,000 ITPM | 400,000 OTPM (Tier 4)",https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
+Anthropic,Claude Opus 4.5,Cache Write (1hour),200000,10.0,25.0,,64000,,"Prompt caching - 1 hour duration; Rate limits: 4,000 RPM | 2,000,000 ITPM | 400,000 OTPM (Tier 4)",https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
+Anthropic,Claude Opus 4.5,Cache Hit,200000,0.5,25.0,,64000,,"Prompt caching - cache read tokens; Rate limits: 4,000 RPM | 2,000,000 ITPM | 400,000 OTPM (Tier 4)",https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
+Anthropic,Claude Opus 4.5,Batch,200000,2.5,12.5,,64000,,"Batch API pricing; Rate limits: 4,000 RPM | 2,000,000 ITPM | 400,000 OTPM (Tier 4)",https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
+Anthropic,Claude Opus 4.1,Standard,200000,15.0,75.0,,64000,,"Rate limits: 4,000 RPM | 2,000,000 ITPM | 400,000 OTPM (Tier 4)",https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
+Anthropic,Claude Opus 4.1,Cache Write (5min),200000,18.75,75.0,,64000,,"Prompt caching - 5 minute duration; Rate limits: 4,000 RPM | 2,000,000 ITPM | 400,000 OTPM (Tier 4)",https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
+Anthropic,Claude Opus 4.1,Cache Write (1hour),200000,30.0,75.0,,64000,,"Prompt caching - 1 hour duration; Rate limits: 4,000 RPM | 2,000,000 ITPM | 400,000 OTPM (Tier 4)",https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
+Anthropic,Claude Opus 4.1,Cache Hit,200000,1.5,75.0,,64000,,"Prompt caching - cache read tokens; Rate limits: 4,000 RPM | 2,000,000 ITPM | 400,000 OTPM (Tier 4)",https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
+Anthropic,Claude Opus 4.1,Batch,200000,7.5,37.5,,64000,,"Batch API pricing; Rate limits: 4,000 RPM | 2,000,000 ITPM | 400,000 OTPM (Tier 4)",https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
+Anthropic,Claude Opus 4,Standard,200000,15.0,75.0,,64000,,"Rate limits: 4,000 RPM | 2,000,000 ITPM | 400,000 OTPM (Tier 4)",https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
+Anthropic,Claude Opus 4,Cache Write (5min),200000,18.75,75.0,,64000,,"Prompt caching - 5 minute duration; Rate limits: 4,000 RPM | 2,000,000 ITPM | 400,000 OTPM (Tier 4)",https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
+Anthropic,Claude Opus 4,Cache Write (1hour),200000,30.0,75.0,,64000,,"Prompt caching - 1 hour duration; Rate limits: 4,000 RPM | 2,000,000 ITPM | 400,000 OTPM (Tier 4)",https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
+Anthropic,Claude Opus 4,Cache Hit,200000,1.5,75.0,,64000,,"Prompt caching - cache read tokens; Rate limits: 4,000 RPM | 2,000,000 ITPM | 400,000 OTPM (Tier 4)",https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
+Anthropic,Claude Opus 4,Batch,200000,7.5,37.5,,64000,,"Batch API pricing; Rate limits: 4,000 RPM | 2,000,000 ITPM | 400,000 OTPM (Tier 4)",https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
+Anthropic,Claude Sonnet 4.5,Standard,200000,3.0,15.0,,64000,,"Rate limits: 4,000 RPM | 2,000,000 ITPM | 400,000 OTPM (Tier 4)",https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
+Anthropic,Claude Sonnet 4.5,Cache Write (5min),200000,3.75,15.0,,64000,,"Prompt caching - 5 minute duration; Rate limits: 4,000 RPM | 2,000,000 ITPM | 400,000 OTPM (Tier 4)",https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
+Anthropic,Claude Sonnet 4.5,Cache Write (1hour),200000,6.0,15.0,,64000,,"Prompt caching - 1 hour duration; Rate limits: 4,000 RPM | 2,000,000 ITPM | 400,000 OTPM (Tier 4)",https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
+Anthropic,Claude Sonnet 4.5,Cache Hit,200000,0.3,15.0,,64000,,"Prompt caching - cache read tokens; Rate limits: 4,000 RPM | 2,000,000 ITPM | 400,000 OTPM (Tier 4)",https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
+Anthropic,Claude Sonnet 4.5,Batch,200000,1.5,7.5,,64000,,"Batch API pricing; Rate limits: 4,000 RPM | 2,000,000 ITPM | 400,000 OTPM (Tier 4)",https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
+Anthropic,Claude Sonnet 4,Standard,200000,3.0,15.0,,64000,,"Rate limits: 4,000 RPM | 2,000,000 ITPM | 400,000 OTPM (Tier 4)",https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
+Anthropic,Claude Sonnet 4,Cache Write (5min),200000,3.75,15.0,,64000,,"Prompt caching - 5 minute duration; Rate limits: 4,000 RPM | 2,000,000 ITPM | 400,000 OTPM (Tier 4)",https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
+Anthropic,Claude Sonnet 4,Cache Write (1hour),200000,6.0,15.0,,64000,,"Prompt caching - 1 hour duration; Rate limits: 4,000 RPM | 2,000,000 ITPM | 400,000 OTPM (Tier 4)",https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
+Anthropic,Claude Sonnet 4,Cache Hit,200000,0.3,15.0,,64000,,"Prompt caching - cache read tokens; Rate limits: 4,000 RPM | 2,000,000 ITPM | 400,000 OTPM (Tier 4)",https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
+Anthropic,Claude Sonnet 4,Batch,200000,1.5,7.5,,64000,,"Batch API pricing; Rate limits: 4,000 RPM | 2,000,000 ITPM | 400,000 OTPM (Tier 4)",https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
+Anthropic,Claude Sonnet 3.7 (deprecated),Standard,200000,3.0,15.0,,64000,,"Rate limits: 4,000 RPM | 200,000 ITPM | 80,000 OTPM (Tier 4)",https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
+Anthropic,Claude Sonnet 3.7 (deprecated),Cache Write (5min),200000,3.75,15.0,,64000,,"Prompt caching - 5 minute duration; Rate limits: 4,000 RPM | 200,000 ITPM | 80,000 OTPM (Tier 4)",https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
+Anthropic,Claude Sonnet 3.7 (deprecated),Cache Write (1hour),200000,6.0,15.0,,64000,,"Prompt caching - 1 hour duration; Rate limits: 4,000 RPM | 200,000 ITPM | 80,000 OTPM (Tier 4)",https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
+Anthropic,Claude Sonnet 3.7 (deprecated),Cache Hit,200000,0.3,15.0,,64000,,"Prompt caching - cache read tokens; Rate limits: 4,000 RPM | 200,000 ITPM | 80,000 OTPM (Tier 4)",https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
+Anthropic,Claude Sonnet 3.7 (deprecated),Batch,200000,1.5,7.5,,64000,,"Batch API pricing; Rate limits: 4,000 RPM | 200,000 ITPM | 80,000 OTPM (Tier 4)",https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
+Anthropic,Claude Haiku 4.5,Standard,200000,1.0,5.0,,64000,,"Rate limits: 4,000 RPM | 4,000,000 ITPM | 800,000 OTPM (Tier 4)",https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
+Anthropic,Claude Haiku 4.5,Cache Write (5min),200000,1.25,5.0,,64000,,"Prompt caching - 5 minute duration; Rate limits: 4,000 RPM | 4,000,000 ITPM | 800,000 OTPM (Tier 4)",https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
+Anthropic,Claude Haiku 4.5,Cache Write (1hour),200000,2.0,5.0,,64000,,"Prompt caching - 1 hour duration; Rate limits: 4,000 RPM | 4,000,000 ITPM | 800,000 OTPM (Tier 4)",https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
+Anthropic,Claude Haiku 4.5,Cache Hit,200000,0.1,5.0,,64000,,"Prompt caching - cache read tokens; Rate limits: 4,000 RPM | 4,000,000 ITPM | 800,000 OTPM (Tier 4)",https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
+Anthropic,Claude Haiku 4.5,Batch,200000,0.5,2.5,,64000,,"Batch API pricing; Rate limits: 4,000 RPM | 4,000,000 ITPM | 800,000 OTPM (Tier 4)",https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
+Anthropic,Claude Haiku 3.5,Standard,200000,0.8,4.0,,64000,,"Rate limits: 4,000 RPM | 400,000 ITPM | 80,000 OTPM (Tier 4)",https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
+Anthropic,Claude Haiku 3.5,Cache Write (5min),200000,1.0,4.0,,64000,,"Prompt caching - 5 minute duration; Rate limits: 4,000 RPM | 400,000 ITPM | 80,000 OTPM (Tier 4)",https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
+Anthropic,Claude Haiku 3.5,Cache Write (1hour),200000,1.6,4.0,,64000,,"Prompt caching - 1 hour duration; Rate limits: 4,000 RPM | 400,000 ITPM | 80,000 OTPM (Tier 4)",https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
+Anthropic,Claude Haiku 3.5,Cache Hit,200000,0.08,4.0,,64000,,"Prompt caching - cache read tokens; Rate limits: 4,000 RPM | 400,000 ITPM | 80,000 OTPM (Tier 4)",https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
+Anthropic,Claude Haiku 3.5,Batch,200000,0.4,2.0,,64000,,"Batch API pricing; Rate limits: 4,000 RPM | 400,000 ITPM | 80,000 OTPM (Tier 4)",https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
 Anthropic,Claude Opus 3 (deprecated),Standard,200000,15.0,75.0,,64000,,,https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
 Anthropic,Claude Opus 3 (deprecated),Cache Write (5min),200000,18.75,75.0,,64000,,Prompt caching - 5 minute duration,https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
 Anthropic,Claude Opus 3 (deprecated),Cache Write (1hour),200000,30.0,75.0,,64000,,Prompt caching - 1 hour duration,https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
 Anthropic,Claude Opus 3 (deprecated),Cache Hit,200000,1.5,75.0,,64000,,Prompt caching - cache read tokens,https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
-Anthropic,Claude Haiku 3,Standard,100000,0.25,1.25,,4096,,,https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
-Anthropic,Claude Haiku 3,Cache Write (5min),100000,0.3,1.25,,4096,,Prompt caching - 5 minute duration,https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
-Anthropic,Claude Haiku 3,Cache Write (1hour),100000,0.5,1.25,,4096,,Prompt caching - 1 hour duration,https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
-Anthropic,Claude Haiku 3,Cache Hit,100000,0.03,1.25,,4096,,Prompt caching - cache read tokens,https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
+Anthropic,Claude Haiku 3,Standard,100000,0.25,1.25,,4096,,"Rate limits: 4,000 RPM | 400,000 ITPM | 80,000 OTPM (Tier 4)",https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
+Anthropic,Claude Haiku 3,Cache Write (5min),100000,0.3,1.25,,4096,,"Prompt caching - 5 minute duration; Rate limits: 4,000 RPM | 400,000 ITPM | 80,000 OTPM (Tier 4)",https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
+Anthropic,Claude Haiku 3,Cache Write (1hour),100000,0.5,1.25,,4096,,"Prompt caching - 1 hour duration; Rate limits: 4,000 RPM | 400,000 ITPM | 80,000 OTPM (Tier 4)",https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
+Anthropic,Claude Haiku 3,Cache Hit,100000,0.03,1.25,,4096,,"Prompt caching - cache read tokens; Rate limits: 4,000 RPM | 400,000 ITPM | 80,000 OTPM (Tier 4)",https://platform.claude.com/docs/en/about-claude/pricing,2026-01-08
