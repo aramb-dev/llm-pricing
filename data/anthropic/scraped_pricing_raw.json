@@ -79,6 +79,70 @@
       "cache_write_1h": 0.5,
       "cache_hits": 0.03,
       "output": 1.25
+    },
+    {
+      "model": "Claude Opus 4.5",
+      "base_input": 2.5,
+      "cache_write_5m": null,
+      "cache_write_1h": null,
+      "cache_hits": null,
+      "output": 12.5
+    },
+    {
+      "model": "Claude Opus 4.1",
+      "base_input": 7.5,
+      "cache_write_5m": null,
+      "cache_write_1h": null,
+      "cache_hits": null,
+      "output": 37.5
+    },
+    {
+      "model": "Claude Opus 4",
+      "base_input": 7.5,
+      "cache_write_5m": null,
+      "cache_write_1h": null,
+      "cache_hits": null,
+      "output": 37.5
+    },
+    {
+      "model": "Claude Sonnet 4.5",
+      "base_input": 1.5,
+      "cache_write_5m": null,
+      "cache_write_1h": null,
+      "cache_hits": null,
+      "output": 7.5
+    },
+    {
+      "model": "Claude Sonnet 4",
+      "base_input": 1.5,
+      "cache_write_5m": null,
+      "cache_write_1h": null,
+      "cache_hits": null,
+      "output": 7.5
+    },
+    {
+      "model": "Claude Sonnet 3.7 (deprecated)",
+      "base_input": 1.5,
+      "cache_write_5m": null,
+      "cache_write_1h": null,
+      "cache_hits": null,
+      "output": 7.5
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "base_input": 0.5,
+      "cache_write_5m": null,
+      "cache_write_1h": null,
+      "cache_hits": null,
+      "output": 2.5
+    },
+    {
+      "model": "Claude Haiku 3.5",
+      "base_input": 0.4,
+      "cache_write_5m": null,
+      "cache_write_1h": null,
+      "cache_hits": null,
+      "output": 2.0
     }
   ],
   "model_specs": {
@@ -89,5 +153,5 @@
       "context_window": "64000"
     }
   },
-  "scraped_at": "2026-01-08T09:13:16.091739"
+  "scraped_at": "2026-01-08T09:19:37.964962"
 }
