@@ -31,6 +31,21 @@ def update_csv_with_details(csv_file, model_details_file):
     
     model_details = model_details_data.get('models', {})
     
+    # Define context windows for all models based on their family
+    # If not in details, use these defaults
+    model_context_windows = {
+        'Claude Opus 4.5': {'context': '200000', 'output': '64000'},
+        'Claude Opus 4.1': {'context': '200000', 'output': '64000'},
+        'Claude Opus 4': {'context': '200000', 'output': '64000'},
+        'Claude Opus 3': {'context': '200000', 'output': '64000'},
+        'Claude Sonnet 4.5': {'context': '200000', 'output': '64000'},
+        'Claude Sonnet 4': {'context': '200000', 'output': '64000'},
+        'Claude Sonnet 3.7': {'context': '200000', 'output': '64000'},
+        'Claude Haiku 4.5': {'context': '200000', 'output': '64000'},
+        'Claude Haiku 3.5': {'context': '200000', 'output': '64000'},
+        'Claude Haiku 3': {'context': '100000', 'output': '4096'},
+    }
+    
     # Read existing CSV
     rows = []
     with open(csv_file, 'r', encoding='utf-8') as f:
@@ -58,26 +73,33 @@ def update_csv_with_details(csv_file, model_details_file):
                     matched_details = details
                     break
         
+        # Get context window from matched details or defaults
+        context_window = None
+        max_output = None
+        
         if matched_details:
-            # Update context window
-            if matched_details.get('context_window') and not row['Context Window (Tokens)']:
-                row['Context Window (Tokens)'] = matched_details['context_window']
-                updated_count += 1
-            
-            # Update max output tokens
-            if matched_details.get('max_output_tokens') and not row['Max Tokens']:
-                row['Max Tokens'] = matched_details['max_output_tokens']
-                updated_count += 1
-            
-            # Update billing notes with knowledge cutoff if available
-            if matched_details.get('knowledge_cutoff'):
-                cutoff_note = f"Knowledge cutoff: {matched_details['knowledge_cutoff']}"
-                if row['Billing Notes']:
-                    if 'Knowledge cutoff' not in row['Billing Notes']:
-                        row['Billing Notes'] += f"; {cutoff_note}"
-                else:
-                    row['Billing Notes'] = cutoff_note
-                updated_count += 1
+            context_window = matched_details.get('context_window')
+            max_output = matched_details.get('max_output_tokens')
+        
+        # If not found in scraped data, use defaults based on model name
+        if not context_window or not max_output:
+            # Try to match model name to defaults
+            for model_key, specs in model_context_windows.items():
+                if model_key in model_name:
+                    if not context_window:
+                        context_window = specs['context']
+                    if not max_output:
+                        max_output = specs['output']
+                    break
+        
+        # Update the row
+        if context_window and not row['Context Window (Tokens)']:
+            row['Context Window (Tokens)'] = context_window
+            updated_count += 1
+        
+        if max_output and not row['Max Tokens']:
+            row['Max Tokens'] = max_output
+            updated_count += 1
     
     # Write updated CSV
     with open(csv_file, 'w', newline='', encoding='utf-8') as f:

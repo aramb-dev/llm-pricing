@@ -174,9 +174,16 @@ def generate_csv(pricing_data, model_specs, output_file):
     csv_rows = []
     today = datetime.now().strftime('%Y-%m-%d')
     
+    # Group pricing data by model to handle multiple entries
+    models_dict = {}
     for item in pricing_data:
         model = item['model']
-        
+        if model not in models_dict:
+            models_dict[model] = []
+        models_dict[model].append(item)
+    
+    # Process each model
+    for model, items in models_dict.items():
         # Get model specs if available
         context_window = None
         max_output = None
@@ -188,46 +195,52 @@ def generate_csv(pricing_data, model_specs, output_file):
                 max_output = specs.get('max_output')
                 break
         
-        # Standard pricing (Base Input Tokens)
-        base_row = {
-            'Provider': 'Anthropic',
-            'Model': model,
-            'Source Type': 'Standard',
-            'Context Window (Tokens)': context_window or '',
-            'Input Cost per 1M Tokens (USD)': item['base_input'] or '',
-            'Output Cost per 1M Tokens (USD)': item['output'] or '',
-            'Min Tokens': '',
-            'Max Tokens': max_output or '',
-            'Rate Limit (Requests/sec)': '',
-            'Billing Notes': '',
-            'Documentation URL': 'https://platform.claude.com/docs/en/about-claude/pricing',
-            'Last Updated': today
-        }
-        csv_rows.append(base_row)
-        
-        # Cache Write 5m pricing
-        if item['cache_write_5m']:
-            cache_5m_row = base_row.copy()
-            cache_5m_row['Source Type'] = 'Cache Write (5min)'
-            cache_5m_row['Input Cost per 1M Tokens (USD)'] = item['cache_write_5m']
-            cache_5m_row['Billing Notes'] = 'Prompt caching - 5 minute duration'
-            csv_rows.append(cache_5m_row)
-        
-        # Cache Write 1h pricing
-        if item['cache_write_1h']:
-            cache_1h_row = base_row.copy()
-            cache_1h_row['Source Type'] = 'Cache Write (1hour)'
-            cache_1h_row['Input Cost per 1M Tokens (USD)'] = item['cache_write_1h']
-            cache_1h_row['Billing Notes'] = 'Prompt caching - 1 hour duration'
-            csv_rows.append(cache_1h_row)
-        
-        # Cache Hits pricing
-        if item['cache_hits']:
-            cache_hit_row = base_row.copy()
-            cache_hit_row['Source Type'] = 'Cache Hit'
-            cache_hit_row['Input Cost per 1M Tokens (USD)'] = item['cache_hits']
-            cache_hit_row['Billing Notes'] = 'Prompt caching - cache read tokens'
-            csv_rows.append(cache_hit_row)
+        # Process each pricing variant for this model
+        for item in items:
+            # Determine if this is standard or batch pricing
+            source_type_prefix = 'Batch' if item['cache_write_5m'] is None else 'Standard'
+            
+            # Standard/Batch pricing (Base Input Tokens)
+            if item['base_input'] is not None or item['output'] is not None:
+                base_row = {
+                    'Provider': 'Anthropic',
+                    'Model': model,
+                    'Source Type': source_type_prefix,
+                    'Context Window (Tokens)': context_window or '',
+                    'Input Cost per 1M Tokens (USD)': item['base_input'] or '',
+                    'Output Cost per 1M Tokens (USD)': item['output'] or '',
+                    'Min Tokens': '',
+                    'Max Tokens': max_output or '',
+                    'Rate Limit (Requests/sec)': '',
+                    'Billing Notes': 'Batch API pricing' if source_type_prefix == 'Batch' else '',
+                    'Documentation URL': 'https://platform.claude.com/docs/en/about-claude/pricing',
+                    'Last Updated': today
+                }
+                csv_rows.append(base_row)
+            
+            # Cache Write 5m pricing (only for standard pricing)
+            if item['cache_write_5m']:
+                cache_5m_row = base_row.copy()
+                cache_5m_row['Source Type'] = 'Cache Write (5min)'
+                cache_5m_row['Input Cost per 1M Tokens (USD)'] = item['cache_write_5m']
+                cache_5m_row['Billing Notes'] = 'Prompt caching - 5 minute duration'
+                csv_rows.append(cache_5m_row)
+            
+            # Cache Write 1h pricing (only for standard pricing)
+            if item['cache_write_1h']:
+                cache_1h_row = base_row.copy()
+                cache_1h_row['Source Type'] = 'Cache Write (1hour)'
+                cache_1h_row['Input Cost per 1M Tokens (USD)'] = item['cache_write_1h']
+                cache_1h_row['Billing Notes'] = 'Prompt caching - 1 hour duration'
+                csv_rows.append(cache_1h_row)
+            
+            # Cache Hits pricing (only for standard pricing)
+            if item['cache_hits']:
+                cache_hit_row = base_row.copy()
+                cache_hit_row['Source Type'] = 'Cache Hit'
+                cache_hit_row['Input Cost per 1M Tokens (USD)'] = item['cache_hits']
+                cache_hit_row['Billing Notes'] = 'Prompt caching - cache read tokens'
+                csv_rows.append(cache_hit_row)
     
     # Write CSV
     if csv_rows:
