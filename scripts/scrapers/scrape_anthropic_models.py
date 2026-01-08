@@ -39,82 +39,93 @@ def scrape_model_comparison():
         for idx, table in enumerate(tables):
             print(f"\nProcessing table {idx + 1}...")
             
-            # Get headers
-            headers = []
-            header_row = table.find('thead')
-            if header_row:
-                headers = [th.get_text(strip=True) for th in header_row.find_all('th')]
-                print(f"  Headers: {headers}")
-            
-            # Get rows - the table structure has Feature in first column, then model names as headers
+            # Get headers to identify model names
+            thead = table.find('thead')
             tbody = table.find('tbody')
-            if tbody:
-                rows = tbody.find_all('tr')
+            
+            if not thead or not tbody:
+                continue
+            
+            # Extract headers (model names are in the header row)
+            header_cells = thead.find_all('th')
+            headers = [th.get_text(strip=True) for th in header_cells]
+            print(f"  Headers: {headers}")
+            
+            # Extract rows with features
+            rows = tbody.find_all('tr')
+            
+            for row in rows:
+                cells = [td.get_text(strip=True) for td in row.find_all('td')]
                 
-                # If first row contains model names (headers), parse accordingly
-                for row in rows:
-                    cells = [td.get_text(strip=True) for td in row.find_all('td')]
-                    
-                    if not cells:
+                if not cells or len(cells) < 2:
+                    continue
+                
+                feature = cells[0]  # First cell is feature name
+                
+                # Look for specific features we care about
+                is_relevant = any(keyword in feature.lower() for keyword in [
+                    'context window', 'max output', 'knowledge cutoff', 
+                    'training data cutoff', 'api id'
+                ])
+                
+                if not is_relevant:
+                    continue
+                
+                print(f"  Processing: {feature}")
+                
+                # Parse the model columns (skip first column which is feature name)
+                for i, cell in enumerate(cells[1:], 1):
+                    # Get model name from header
+                    if i < len(headers):
+                        model_name = headers[i]
+                    else:
                         continue
                     
-                    feature = cells[0]  # First cell is the feature name
-                    
-                    # Skip non-spec rows
-                    if feature.lower() not in ['context window', 'max output', 'knowledge cutoff', 'training data cutoff']:
+                    if not cell or cell in ['-', '—', 'N/A']:
                         continue
                     
-                    print(f"  Processing: {feature}")
+                    if model_name not in model_data:
+                        model_data[model_name] = {
+                            'model': model_name,
+                            'context_window': None,
+                            'max_output_tokens': None,
+                            'knowledge_cutoff': None,
+                            'training_data_cutoff': None,
+                        }
                     
-                    # Parse the rest of the cells as model data
-                    for i, cell in enumerate(cells[1:], 1):
-                        # Try to get model name from header
-                        model_name = headers[i] if i < len(headers) else f"Model {i}"
-                        
-                        if not cell or cell == '-' or cell == '—':
-                            continue
-                        
-                        if model_name not in model_data:
-                            model_data[model_name] = {
-                                'model': model_name,
-                                'context_window': None,
-                                'max_output_tokens': None,
-                                'knowledge_cutoff': None,
-                                'training_data_cutoff': None,
-                                'features': []
-                            }
-                        
-                        # Parse based on feature type
-                        if feature.lower() == 'context window':
-                            tokens_match = re.search(r'([\d,]+)K?\s+tokens?', cell, re.IGNORECASE)
-                            if tokens_match:
-                                tokens = tokens_match.group(1).replace(',', '')
-                                if 'K' in cell.upper():
-                                    tokens = str(int(tokens) * 1000)
-                                model_data[model_name]['context_window'] = tokens
-                        
-                        elif feature.lower() == 'max output':
-                            tokens_match = re.search(r'([\d,]+)K?\s+tokens?', cell, re.IGNORECASE)
-                            if tokens_match:
-                                tokens = tokens_match.group(1).replace(',', '')
-                                if 'K' in cell.upper():
-                                    tokens = str(int(tokens) * 1000)
-                                model_data[model_name]['max_output_tokens'] = tokens
-                        
-                        elif 'knowledge cutoff' in feature.lower():
-                            date_match = re.search(r'([\w]+\s+\d{1,2},?\s+\d{4})', cell)
-                            if date_match:
-                                model_data[model_name]['knowledge_cutoff'] = date_match.group(1)
-                        
-                        elif 'training data cutoff' in feature.lower():
-                            date_match = re.search(r'([\w]+\s+\d{1,2},?\s+\d{4})', cell)
-                            if date_match:
-                                model_data[model_name]['training_data_cutoff'] = date_match.group(1)
+                    # Parse based on feature type
+                    if 'context window' in feature.lower():
+                        tokens_match = re.search(r'([\d,]+)K?\s+tokens?', cell, re.IGNORECASE)
+                        if tokens_match:
+                            tokens = tokens_match.group(1).replace(',', '')
+                            if 'K' in cell.upper():
+                                tokens = str(int(tokens) * 1000)
+                            model_data[model_name]['context_window'] = tokens
+                    
+                    elif 'max output' in feature.lower():
+                        tokens_match = re.search(r'([\d,]+)K?\s+tokens?', cell, re.IGNORECASE)
+                        if tokens_match:
+                            tokens = tokens_match.group(1).replace(',', '')
+                            if 'K' in cell.upper():
+                                tokens = str(int(tokens) * 1000)
+                            model_data[model_name]['max_output_tokens'] = tokens
+                    
+                    elif 'knowledge cutoff' in feature.lower():
+                        date_match = re.search(r'([\w]+\s+\d{1,2},?\s+\d{4})', cell)
+                        if date_match:
+                            model_data[model_name]['knowledge_cutoff'] = date_match.group(1)
+                    
+                    elif 'training data cutoff' in feature.lower():
+                        date_match = re.search(r'([\w]+\s+\d{1,2},?\s+\d{4})', cell)
+                        if date_match:
+                            model_data[model_name]['training_data_cutoff'] = date_match.group(1)
         
         return model_data
         
     except Exception as e:
         print(f"✗ Error scraping models: {e}")
+        import traceback
+        traceback.print_exc()
         return {}
 
 def main():
