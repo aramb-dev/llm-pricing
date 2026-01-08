@@ -9,6 +9,7 @@ Selecting the optimal Claude model for your application involves balancing three
 ## Establish key criteria
 
 When choosing a Claude model, we recommend first evaluating these factors:
+
 - **Capabilities:** What specific features or capabilities will you need the model to have in order to meet your needs?
 - **Speed:** How quickly does the model need to respond in your application?
 - **Cost:** What's your budget for both development and production usage?
@@ -31,6 +32,7 @@ For many applications, starting with a faster, more cost-effective model like Cl
 4. Upgrade only if necessary for specific capability gaps
 
 This approach allows for quick iteration, lower development costs, and is often sufficient for many common applications. This approach is best for:
+
 - Initial prototyping and development
 - Applications with tight latency requirements
 - Cost-sensitive implementations
@@ -46,6 +48,7 @@ For complex tasks where intelligence and advanced capabilities are paramount, yo
 4. Consider increasing efficiency by downgrading intelligence over time with greater workflow optimization
 
 This approach is best for:
+
 - Complex reasoning tasks
 - Scientific or mathematical applications
 - Tasks requiring nuanced understanding
@@ -66,6 +69,7 @@ This approach is best for:
 ## Decide whether to upgrade or change models
 
 To determine if you need to upgrade or change models, you should:
+
 1. [Create benchmark tests](/docs/en/test-and-evaluate/develop-tests) specific to your use case - having a good evaluation set is the most important step in the process
 2. Test with your actual prompts and data
 3. Compare performance across models for:
