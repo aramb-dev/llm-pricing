@@ -1,0 +1,199 @@
+Provider,Model,Source Type,Context Window (Tokens),Input Cost per 1M Tokens (USD),Output Cost per 1M Tokens (USD),Min Tokens,Max Tokens,Rate Limit (Requests/sec),Billing Notes,Documentation URL,Last Updated
+OpenAI,gpt-5.2,Batch,400000,0.875,7.00,,128000,500 RPM,Cached input: $0.0875,https://platform.openai.com/docs/pricing,2026-01-08
+OpenAI,gpt-5.1,Batch,400000,0.625,5.00,,128000,500 RPM,Cached input: $0.0625,https://platform.openai.com/docs/pricing,2026-01-08
+OpenAI,gpt-5,Batch,400000,0.625,5.00,,128000,500 RPM,Cached input: $0.0625,https://platform.openai.com/docs/pricing,2026-01-08
+OpenAI,gpt-5-mini,Batch,400000,0.125,1.00,,128000,500 RPM,Cached input: $0.0125,https://platform.openai.com/docs/pricing,2026-01-08
+OpenAI,gpt-5-nano,Batch,400000,0.025,0.20,,128000,500 RPM,Cached input: $0.0025,https://platform.openai.com/docs/pricing,2026-01-08
+OpenAI,gpt-5.2-pro,Batch,400000,10.50,84.00,,128000,500 RPM,,https://platform.openai.com/docs/pricing,2026-01-08
+OpenAI,gpt-5-pro,Batch,400000,7.50,60.00,,272000,500 RPM,,https://platform.openai.com/docs/pricing,2026-01-08
+OpenAI,gpt-4.1,Batch,1047576,1.00,4.00,,32768,500 RPM,,https://platform.openai.com/docs/pricing,2026-01-08
+OpenAI,gpt-4.1-mini,Batch,1047576,0.20,0.80,,32768,3 RPM,,https://platform.openai.com/docs/pricing,2026-01-08
+OpenAI,gpt-4.1-nano,Batch,,0.05,0.20,,,,,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-4o,Batch,128000,1.25,5.00,,16384,500 RPM,,https://platform.openai.com/docs/pricing,2026-01-08
+OpenAI,gpt-4o-2024-05-13,Batch,,2.50,7.50,,,,,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-4o-mini,Batch,128000,0.075,0.30,,16384,3 RPM,,https://platform.openai.com/docs/pricing,2026-01-08
+OpenAI,o1,Batch,200000,7.50,30.00,,100000,500 RPM,,https://platform.openai.com/docs/pricing,2026-01-08
+OpenAI,o1-pro,Batch,,75.00,300.00,,,,,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,o3-pro,Batch,,10.00,40.00,,,,,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,o3,Batch,200000,1.00,4.00,,100000,500 RPM,,https://platform.openai.com/docs/pricing,2026-01-08
+OpenAI,o3-deep-research,Batch,,5.00,20.00,,,,,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,o4-mini,Batch,200000,0.55,2.20,,100000,"1,000 RPM",,https://platform.openai.com/docs/pricing,2026-01-08
+OpenAI,o4-mini-deep-research,Batch,,1.00,4.00,,,,,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,o3-mini,Batch,200000,0.55,2.20,,100000,"1,000 RPM",,https://platform.openai.com/docs/pricing,2026-01-08
+OpenAI,o1-mini,Batch,128000,0.55,2.20,,65536,500 RPM,,https://platform.openai.com/docs/pricing,2026-01-08
+OpenAI,computer-use-preview,Batch,,1.50,6.00,,,,,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-5.2,Flex,400000,0.875,7.00,,128000,500 RPM,Cached input: $0.0875,https://platform.openai.com/docs/pricing,2026-01-08
+OpenAI,gpt-5.1,Flex,400000,0.625,5.00,,128000,500 RPM,Cached input: $0.0625,https://platform.openai.com/docs/pricing,2026-01-08
+OpenAI,gpt-5,Flex,400000,0.625,5.00,,128000,500 RPM,Cached input: $0.0625,https://platform.openai.com/docs/pricing,2026-01-08
+OpenAI,gpt-5-mini,Flex,400000,0.125,1.00,,128000,500 RPM,Cached input: $0.0125,https://platform.openai.com/docs/pricing,2026-01-08
+OpenAI,gpt-5-nano,Flex,400000,0.025,0.20,,128000,500 RPM,Cached input: $0.0025,https://platform.openai.com/docs/pricing,2026-01-08
+OpenAI,o3,Flex,200000,1.00,4.00,,100000,500 RPM,Cached input: $0.25,https://platform.openai.com/docs/pricing,2026-01-08
+OpenAI,o4-mini,Flex,200000,0.55,2.20,,100000,"1,000 RPM",Cached input: $0.138,https://platform.openai.com/docs/pricing,2026-01-08
+OpenAI,gpt-5.2,Standard,400000,1.75,14.00,,128000,500 RPM,Cached input: $0.175,https://platform.openai.com/docs/pricing,2026-01-08
+OpenAI,gpt-5.1,Standard,400000,1.25,10.00,,128000,500 RPM,Cached input: $0.125,https://platform.openai.com/docs/pricing,2026-01-08
+OpenAI,gpt-5,Standard,400000,1.25,10.00,,128000,500 RPM,Cached input: $0.125,https://platform.openai.com/docs/pricing,2026-01-08
+OpenAI,gpt-5-mini,Standard,400000,0.25,2.00,,128000,500 RPM,Cached input: $0.025,https://platform.openai.com/docs/pricing,2026-01-08
+OpenAI,gpt-5-nano,Standard,400000,0.05,0.40,,128000,500 RPM,Cached input: $0.005,https://platform.openai.com/docs/pricing,2026-01-08
+OpenAI,gpt-5.2-chat-latest,Standard,400000,1.75,14.00,,128000,500 RPM,Cached input: $0.175,https://platform.openai.com/docs/pricing,2026-01-08
+OpenAI,gpt-5.1-chat-latest,Standard,,1.25,10.00,,,,Cached input: $0.125,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-5-chat-latest,Standard,,1.25,10.00,,,,Cached input: $0.125,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-5.1-codex-max,Standard,,1.25,10.00,,,,Cached input: $0.125,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-5.1-codex,Standard,,1.25,10.00,,,,Cached input: $0.125,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-5-codex,Standard,,1.25,10.00,,,,Cached input: $0.125,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-5.2-pro,Standard,400000,21.00,168.00,,128000,500 RPM,,https://platform.openai.com/docs/pricing,2026-01-08
+OpenAI,gpt-5-pro,Standard,400000,15.00,120.00,,272000,500 RPM,,https://platform.openai.com/docs/pricing,2026-01-08
+OpenAI,gpt-4.1,Standard,1047576,2.00,8.00,,32768,500 RPM,Cached input: $0.50,https://platform.openai.com/docs/pricing,2026-01-08
+OpenAI,gpt-4.1-mini,Standard,1047576,0.40,1.60,,32768,3 RPM,Cached input: $0.10,https://platform.openai.com/docs/pricing,2026-01-08
+OpenAI,gpt-4.1-nano,Standard,,0.10,0.40,,,,Cached input: $0.025,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-4o,Standard,128000,2.50,10.00,,16384,500 RPM,Cached input: $1.25,https://platform.openai.com/docs/pricing,2026-01-08
+OpenAI,gpt-4o-2024-05-13,Standard,,5.00,15.00,,,,,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-4o-mini,Standard,128000,0.15,0.60,,16384,3 RPM,Cached input: $0.075,https://platform.openai.com/docs/pricing,2026-01-08
+OpenAI,gpt-realtime,Standard,,4.00,16.00,,,,Text tokens only; Cached input: $0.40,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-realtime-mini,Standard,,0.60,2.40,,,,Text tokens only; Cached input: $0.06,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-4o-realtime-preview,Standard,,5.00,20.00,,,,Text tokens only; Cached input: $2.50,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-4o-mini-realtime-preview,Standard,,0.60,2.40,,,,Text tokens only; Cached input: $0.30,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-audio,Standard,,2.50,10.00,,,,Text tokens only,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-audio-mini,Standard,,0.60,2.40,,,,Text tokens only,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-4o-audio-preview,Standard,,2.50,10.00,,,,Text tokens only,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-4o-mini-audio-preview,Standard,,0.15,0.60,,,,Text tokens only,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,o1,Standard,200000,15.00,60.00,,100000,500 RPM,Cached input: $7.50,https://platform.openai.com/docs/pricing,2026-01-08
+OpenAI,o1-pro,Standard,,150.00,600.00,,,,,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,o3-pro,Standard,,20.00,80.00,,,,,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,o3,Standard,200000,2.00,8.00,,100000,500 RPM,Cached input: $0.50,https://platform.openai.com/docs/pricing,2026-01-08
+OpenAI,o3-deep-research,Standard,,10.00,40.00,,,,Cached input: $2.50,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,o4-mini,Standard,200000,1.10,4.40,,100000,"1,000 RPM",Cached input: $0.275,https://platform.openai.com/docs/pricing,2026-01-08
+OpenAI,o4-mini-deep-research,Standard,,2.00,8.00,,,,Cached input: $0.50,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,o3-mini,Standard,200000,1.10,4.40,,100000,"1,000 RPM",Cached input: $0.55,https://platform.openai.com/docs/pricing,2026-01-08
+OpenAI,o1-mini,Standard,128000,1.10,4.40,,65536,500 RPM,Cached input: $0.55,https://platform.openai.com/docs/pricing,2026-01-08
+OpenAI,gpt-5.1-codex-mini,Standard,,0.25,2.00,,,,Cached input: $0.025,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,codex-mini-latest,Standard,,1.50,6.00,,,,Cached input: $0.375,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-5-search-api,Standard,,1.25,10.00,,,,Cached input: $0.125,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-4o-mini-search-preview,Standard,,0.15,0.60,,,,,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-4o-search-preview,Standard,,2.50,10.00,,,,,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,computer-use-preview,Standard,,3.00,12.00,,,,,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-image-1.5,Standard,,5.00,10.00,,,,Text tokens only; Cached input: $1.25,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,chatgpt-image-latest,Standard,,5.00,10.00,,,,Text tokens only; Cached input: $1.25,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-image-1,Standard,,5.00,,,,,Text tokens only; Cached input: $1.25; No output tokens,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-image-1-mini,Standard,,2.00,,,,,Text tokens only; Cached input: $0.20; No output tokens,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-5.2,Priority,400000,3.50,28.00,,128000,500 RPM,Cached input: $0.35,https://platform.openai.com/docs/pricing,2026-01-08
+OpenAI,gpt-5.1,Priority,400000,2.50,20.00,,128000,500 RPM,Cached input: $0.25,https://platform.openai.com/docs/pricing,2026-01-08
+OpenAI,gpt-5,Priority,400000,2.50,20.00,,128000,500 RPM,Cached input: $0.25,https://platform.openai.com/docs/pricing,2026-01-08
+OpenAI,gpt-5-mini,Priority,400000,0.45,3.60,,128000,500 RPM,Cached input: $0.045,https://platform.openai.com/docs/pricing,2026-01-08
+OpenAI,gpt-5.1-codex-max,Priority,,2.50,20.00,,,,Cached input: $0.25,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-5.1-codex,Priority,,2.50,20.00,,,,Cached input: $0.25,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-5-codex,Priority,,2.50,20.00,,,,Cached input: $0.25,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-4.1,Priority,1047576,3.50,14.00,,32768,500 RPM,Cached input: $0.875,https://platform.openai.com/docs/pricing,2026-01-08
+OpenAI,gpt-4.1-mini,Priority,1047576,0.70,2.80,,32768,3 RPM,Cached input: $0.175,https://platform.openai.com/docs/pricing,2026-01-08
+OpenAI,gpt-4.1-nano,Priority,,0.20,0.80,,,,Cached input: $0.05,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-4o,Priority,128000,4.25,17.00,,16384,500 RPM,Cached input: $2.125,https://platform.openai.com/docs/pricing,2026-01-08
+OpenAI,gpt-4o-2024-05-13,Priority,,8.75,26.25,,,,,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-4o-mini,Priority,128000,0.25,1.00,,16384,3 RPM,Cached input: $0.125,https://platform.openai.com/docs/pricing,2026-01-08
+OpenAI,o3,Priority,200000,3.50,14.00,,100000,500 RPM,Cached input: $0.875,https://platform.openai.com/docs/pricing,2026-01-08
+OpenAI,o4-mini,Priority,200000,2.00,8.00,,100000,"1,000 RPM",Cached input: $0.50,https://platform.openai.com/docs/pricing,2026-01-08
+OpenAI,gpt-image-1.5,Image Tokens,,8.00,32.00,,,,Cached input: $2.00,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,chatgpt-image-latest,Image Tokens,,8.00,32.00,,,,Cached input: $2.00,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-image-1,Image Tokens,,10.00,40.00,,,,Cached input: $2.50,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-image-1-mini,Image Tokens,,2.50,8.00,,,,Cached input: $0.25,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-realtime,Image Tokens,,5.00,,,,,Cached input: $0.50; No output tokens,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-realtime-mini,Image Tokens,,0.80,,,,,Cached input: $0.08; No output tokens,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-realtime,Audio Tokens,,32.00,64.00,,,,Cached input: $0.40,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-realtime-mini,Audio Tokens,,10.00,20.00,,,,Cached input: $0.30,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-4o-realtime-preview,Audio Tokens,,40.00,80.00,,,,Cached input: $2.50,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-4o-mini-realtime-preview,Audio Tokens,,10.00,20.00,,,,Cached input: $0.30,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-audio,Audio Tokens,,32.00,64.00,,,,,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-audio-mini,Audio Tokens,,10.00,20.00,,,,,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-4o-audio-preview,Audio Tokens,,40.00,80.00,,,,,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-4o-mini-audio-preview,Audio Tokens,,10.00,20.00,,,,,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,sora-2,Video,,,,,,,Portrait 720x1280 / Landscape 1280x720: $0.10/second,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,sora-2-pro,Video,,,,,,,Portrait 720x1280 / Landscape 1280x720: $0.30/second,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,sora-2-pro,Video,,,,,,,Portrait 1024x1792 / Landscape 1792x1024: $0.50/second,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,o4-mini-2025-04-16,Fine-tuning Batch,,2.00,8.00,,,,Training: $100/hour; Cached input: $0.50,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,o4-mini-2025-04-16 (data sharing),Fine-tuning Batch,,1.00,4.00,,,,Training: $100/hour; Cached input: $0.25; With data sharing,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-4.1-2025-04-14,Fine-tuning Batch,,1.50,6.00,,,,Training: $25; Cached input: $0.50,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-4.1-mini-2025-04-14,Fine-tuning Batch,,0.40,1.60,,,,Training: $5; Cached input: $0.10,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-4.1-nano-2025-04-14,Fine-tuning Batch,,0.10,0.40,,,,Training: $1.50; Cached input: $0.025,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-4o-2024-08-06,Fine-tuning Batch,,2.225,12.50,,,,Training: $25; Cached input: $0.90,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-4o-mini-2024-07-18,Fine-tuning Batch,,0.15,0.60,,,,Training: $3; Cached input: $0.075,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-3.5-turbo,Fine-tuning Batch,,1.50,3.00,,,,Training: $8,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,davinci-002,Fine-tuning Batch,,6.00,6.00,,,,Training: $6,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,babbage-002,Fine-tuning Batch,,0.80,0.90,,,,Training: $0.40,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,o4-mini-2025-04-16,Fine-tuning Standard,,4.00,16.00,,,,Training: $100/hour; Cached input: $1.00,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,o4-mini-2025-04-16 (data sharing),Fine-tuning Standard,,2.00,8.00,,,,Training: $100/hour; Cached input: $0.50; With data sharing,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-4.1-2025-04-14,Fine-tuning Standard,,3.00,12.00,,,,Training: $25; Cached input: $0.75,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-4.1-mini-2025-04-14,Fine-tuning Standard,,0.80,3.20,,,,Training: $5; Cached input: $0.20,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-4.1-nano-2025-04-14,Fine-tuning Standard,,0.20,0.80,,,,Training: $1.50; Cached input: $0.05,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-4o-2024-08-06,Fine-tuning Standard,,3.75,15.00,,,,Training: $25; Cached input: $1.875,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-4o-mini-2024-07-18,Fine-tuning Standard,,0.30,1.20,,,,Training: $3; Cached input: $0.15,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-3.5-turbo,Fine-tuning Standard,,3.00,6.00,,,,Training: $8,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,davinci-002,Fine-tuning Standard,,12.00,12.00,,,,Training: $6,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,babbage-002,Fine-tuning Standard,,1.60,1.60,,,,Training: $0.40,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,Code Interpreter,Built-in Tool,,,,,,,1GB: $0.03/container; 4GB: $0.12/container; 16GB: $0.48/container; 64GB: $1.92/container,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,File search storage,Built-in Tool,,,,,,,1GB free; $0.10/GB per day,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,File search tool call,Built-in Tool,,,,,,,$2.50/1k calls (Responses API only),https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,Web search (all models),Built-in Tool,,,,,,,$10.00/1k calls + search content tokens at model rates,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,Web search preview (reasoning),Built-in Tool,,,,,,,$10.00/1k calls + search content tokens at model rates,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,Web search preview (non-reasoning),Built-in Tool,,,,,,,$25.00/1k calls + free search content tokens,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-4o-mini-tts,Transcription/Speech,,0.60,,,,,Text tokens; Estimated: $0.015/minute,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-4o-transcribe,Transcription/Speech,,2.50,10.00,,,,Text tokens; Estimated: $0.006/minute,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-4o-transcribe-diarize,Transcription/Speech,,2.50,10.00,,,,Text tokens; Estimated: $0.006/minute,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-4o-mini-transcribe,Transcription/Speech,,1.25,5.00,,,,Text tokens; Estimated: $0.003/minute,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-4o-mini-tts,Transcription/Speech Audio,,,12.00,,,,Audio tokens; Estimated: $0.015/minute,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-4o-transcribe,Transcription/Speech Audio,,6.00,,,,,Audio tokens; Estimated: $0.006/minute,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-4o-transcribe-diarize,Transcription/Speech Audio,,6.00,,,,,Audio tokens; Estimated: $0.006/minute,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-4o-mini-transcribe,Transcription/Speech Audio,,3.00,,,,,Audio tokens; Estimated: $0.003/minute,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,Whisper,Transcription,,,,,,,Per minute: $0.006,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,TTS,Speech Generation,,,,,,,Per 1M characters: $15.00,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,TTS HD,Speech Generation,,,,,,,Per 1M characters: $30.00,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,GPT Image 1.5 (1024x1024),Image Generation,,,,,,,Low: $0.009; Medium: $0.034; High: $0.133,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,GPT Image 1.5 (1024x1536),Image Generation,,,,,,,Low: $0.013; Medium: $0.05; High: $0.2,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,GPT Image 1.5 (1536x1024),Image Generation,,,,,,,Low: $0.013; Medium: $0.05; High: $0.2,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,GPT Image Latest (1024x1024),Image Generation,,,,,,,Low: $0.009; Medium: $0.034; High: $0.133,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,GPT Image Latest (1024x1536),Image Generation,,,,,,,Low: $0.013; Medium: $0.05; High: $0.2,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,GPT Image Latest (1536x1024),Image Generation,,,,,,,Low: $0.013; Medium: $0.05; High: $0.2,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,GPT Image 1 (1024x1024),Image Generation,,,,,,,Low: $0.011; Medium: $0.042; High: $0.167,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,GPT Image 1 (1024x1536),Image Generation,,,,,,,Low: $0.016; Medium: $0.063; High: $0.25,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,GPT Image 1 (1536x1024),Image Generation,,,,,,,Low: $0.016; Medium: $0.063; High: $0.25,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,GPT Image 1 Mini (1024x1024),Image Generation,,,,,,,Low: $0.005; Medium: $0.011; High: $0.036,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,GPT Image 1 Mini (1024x1536),Image Generation,,,,,,,Low: $0.006; Medium: $0.015; High: $0.052,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,GPT Image 1 Mini (1536x1024),Image Generation,,,,,,,Low: $0.006; Medium: $0.015; High: $0.052,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,DALL·E 3 (1024x1024),Image Generation,,,,,,,Standard: $0.04; HD: $0.08,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,DALL·E 3 (1024x1536),Image Generation,,,,,,,Standard: $0.08; HD: $0.12,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,DALL·E 3 (1536x1024),Image Generation,,,,,,,Standard: $0.08; HD: $0.12,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,DALL·E 2 (1024x1024),Image Generation,,,,,,,Standard: $0.016,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,DALL·E 2 (1024x1536),Image Generation,,,,,,,Standard: $0.018,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,DALL·E 2 (1536x1024),Image Generation,,,,,,,Standard: $0.02,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,text-embedding-3-small,Embeddings,,0.02,,,,,Batch: $0.01,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,text-embedding-3-large,Embeddings,,0.13,,,,,Batch: $0.065,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,text-embedding-ada-002,Embeddings,,0.10,,,,,Batch: $0.05,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,omni-moderation,Moderation,,,,,,,Free,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-4-turbo-2024-04-09,Legacy Batch,,5.00,15.00,,,,,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-4-0125-preview,Legacy Batch,,5.00,15.00,,,,,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-4-1106-preview,Legacy Batch,,5.00,15.00,,,,,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-4-1106-vision-preview,Legacy Batch,,5.00,15.00,,,,,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-4-0613,Legacy Batch,,15.00,30.00,,,,,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-4-0314,Legacy Batch,,15.00,30.00,,,,,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-4-32k,Legacy Batch,,30.00,60.00,,,,,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-3.5-turbo-0125,Legacy Batch,,0.25,0.75,,,,,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-3.5-turbo-1106,Legacy Batch,,1.00,2.00,,,,,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-3.5-turbo-0613,Legacy Batch,,1.50,2.00,,,,,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-3.5-0301,Legacy Batch,,1.50,2.00,,,,,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-3.5-turbo-16k-0613,Legacy Batch,,1.50,2.00,,,,,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,davinci-002,Legacy Batch,,1.00,1.00,,,,,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,babbage-002,Legacy Batch,,0.20,0.20,,,,,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,chatgpt-4o-latest,Legacy Standard,,5.00,15.00,,,,,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-4-turbo-2024-04-09,Legacy Standard,,10.00,30.00,,,,,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-4-0125-preview,Legacy Standard,,10.00,30.00,,,,,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-4-1106-preview,Legacy Standard,,10.00,30.00,,,,,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-4-1106-vision-preview,Legacy Standard,,10.00,30.00,,,,,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-4-0613,Legacy Standard,,30.00,60.00,,,,,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-4-0314,Legacy Standard,,30.00,60.00,,,,,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-4-32k,Legacy Standard,,60.00,120.00,,,,,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-3.5-turbo,Legacy Standard,,0.50,1.50,,,,,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-3.5-turbo-0125,Legacy Standard,,0.50,1.50,,,,,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-3.5-turbo-1106,Legacy Standard,,1.00,2.00,,,,,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-3.5-turbo-0613,Legacy Standard,,1.50,2.00,,,,,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-3.5-0301,Legacy Standard,,1.50,2.00,,,,,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-3.5-turbo-instruct,Legacy Standard,,1.50,2.00,,,,,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,gpt-3.5-turbo-16k-0613,Legacy Standard,,3.00,4.00,,,,,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,davinci-002,Legacy Standard,,2.00,2.00,,,,,https://platform.openai.com/docs/pricing,2026-01-07
+OpenAI,babbage-002,Legacy Standard,,0.40,0.40,,,,,https://platform.openai.com/docs/pricing,2026-01-07

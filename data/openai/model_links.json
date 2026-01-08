@@ -1,0 +1,290 @@
+{
+  "gpt-5.2": {
+    "url": "https://platform.openai.com/docs/models/gpt-5.2",
+    "display_name": "GPT-5.2NewThe best model for coding and agentic\n                                                                                tasks across industries"
+  },
+  "gpt-5-mini": {
+    "url": "https://platform.openai.com/docs/models/gpt-5-mini",
+    "display_name": "GPT-5 miniA faster, cost-efficient version of\n                                                                                GPT-5 for well-defined tasks"
+  },
+  "gpt-5-nano": {
+    "url": "https://platform.openai.com/docs/models/gpt-5-nano",
+    "display_name": "GPT-5 nanoFastest, most cost-efficient version of\n                                                                                GPT-5"
+  },
+  "gpt-5.2-pro": {
+    "url": "https://platform.openai.com/docs/models/gpt-5.2-pro",
+    "display_name": "GPT-5.2 proVersion of GPT-5.2 that produces\n                                                                                smarter and more precise responses."
+  },
+  "gpt-5": {
+    "url": "https://platform.openai.com/docs/models/gpt-5",
+    "display_name": "GPT-5Previous intelligent reasoning model\n                                                                                for coding and agentic tasks with\n                                                                                configurable reasoning effort"
+  },
+  "gpt-4.1": {
+    "url": "https://platform.openai.com/docs/models/gpt-4.1",
+    "display_name": "GPT-4.1Smartest non-reasoning model"
+  },
+  "gpt-oss-120b": {
+    "url": "https://platform.openai.com/docs/models/gpt-oss-120b",
+    "display_name": "gpt-oss-120bMost powerful open-weight model, fits\n                                                                                into an H100 GPU"
+  },
+  "gpt-oss-20b": {
+    "url": "https://platform.openai.com/docs/models/gpt-oss-20b",
+    "display_name": "gpt-oss-20bMedium-sized open-weight model for low\n                                                                                latency"
+  },
+  "sora-2": {
+    "url": "https://platform.openai.com/docs/models/sora-2",
+    "display_name": "Sora 2Flagship video generation with synced\n                                                                                audio"
+  },
+  "sora-2-pro": {
+    "url": "https://platform.openai.com/docs/models/sora-2-pro",
+    "display_name": "Sora 2 ProMost advanced synced-audio video\n                                                                                generation"
+  },
+  "o3-deep-research": {
+    "url": "https://platform.openai.com/docs/models/o3-deep-research",
+    "display_name": "o3-deep-researchOur most powerful deep research model"
+  },
+  "o4-mini-deep-research": {
+    "url": "https://platform.openai.com/docs/models/o4-mini-deep-research",
+    "display_name": "o4-mini-deep-researchFaster, more affordable deep research\n                                                                                model"
+  },
+  "gpt-image-1.5": {
+    "url": "https://platform.openai.com/docs/models/gpt-image-1.5",
+    "display_name": "GPT Image 1.5State-of-the-art image generation\n                                                                                model."
+  },
+  "chatgpt-image-latest": {
+    "url": "https://platform.openai.com/docs/models/chatgpt-image-latest",
+    "display_name": "chatgpt-image-latestImage model used in ChatGPT."
+  },
+  "gpt-image-1": {
+    "url": "https://platform.openai.com/docs/models/gpt-image-1",
+    "display_name": "GPT Image 1Our previous image generation model"
+  },
+  "gpt-image-1-mini": {
+    "url": "https://platform.openai.com/docs/models/gpt-image-1-mini",
+    "display_name": "gpt-image-1-miniA cost-efficient version of GPT Image 1"
+  },
+  "gpt-4o-mini-tts": {
+    "url": "https://platform.openai.com/docs/models/gpt-4o-mini-tts",
+    "display_name": "GPT-4o mini TTSText-to-speech model powered by GPT-4o\n                                                                                mini"
+  },
+  "gpt-4o-transcribe": {
+    "url": "https://platform.openai.com/docs/models/gpt-4o-transcribe",
+    "display_name": "GPT-4o TranscribeSpeech-to-text model powered by GPT-4o"
+  },
+  "gpt-4o-mini-transcribe": {
+    "url": "https://platform.openai.com/docs/models/gpt-4o-mini-transcribe",
+    "display_name": "GPT-4o mini TranscribeSpeech-to-text model powered by GPT-4o\n                                                                                mini"
+  },
+  "gpt-realtime": {
+    "url": "https://platform.openai.com/docs/models/gpt-realtime",
+    "display_name": "gpt-realtimeModel capable of realtime text and\n                                                                                audio inputs and outputs"
+  },
+  "gpt-audio": {
+    "url": "https://platform.openai.com/docs/models/gpt-audio",
+    "display_name": "gpt-audioFor audio inputs and outputs with Chat\n                                                                                Completions API"
+  },
+  "gpt-realtime-mini": {
+    "url": "https://platform.openai.com/docs/models/gpt-realtime-mini",
+    "display_name": "gpt-realtime-miniA cost-efficient version of GPT\n                                                                                Realtime"
+  },
+  "gpt-audio-mini": {
+    "url": "https://platform.openai.com/docs/models/gpt-audio-mini",
+    "display_name": "gpt-audio-miniA cost-efficient version of GPT Audio"
+  },
+  "gpt-5-chat-latest": {
+    "url": "https://platform.openai.com/docs/models/gpt-5-chat-latest",
+    "display_name": "GPT-5 ChatGPT-5 model used in ChatGPT"
+  },
+  "chatgpt-4o-latest": {
+    "url": "https://platform.openai.com/docs/models/chatgpt-4o-latest",
+    "display_name": "ChatGPT-4oGPT-4o model used in ChatGPT"
+  },
+  "gpt-5.1": {
+    "url": "https://platform.openai.com/docs/models/gpt-5.1",
+    "display_name": "GPT-5.1The best model for coding and agentic\n                                                                                tasks with configurable reasoning effort"
+  },
+  "gpt-5.1-codex": {
+    "url": "https://platform.openai.com/docs/models/gpt-5.1-codex",
+    "display_name": "GPT-5.1 CodexA version of GPT-5.1 optimized for\n                                                                                agentic coding in Codex."
+  },
+  "gpt-5.1-codex-max": {
+    "url": "https://platform.openai.com/docs/models/gpt-5.1-codex-max",
+    "display_name": "GPT-5.1-Codex-MaxOur most intelligent coding model\n                                                                                optimized for long-horizon, agentic\n                                                                                coding tasks."
+  },
+  "gpt-5-codex": {
+    "url": "https://platform.openai.com/docs/models/gpt-5-codex",
+    "display_name": "GPT-5-CodexA version of GPT-5 optimized for\n                                                                                agentic coding in Codex"
+  },
+  "gpt-5-pro": {
+    "url": "https://platform.openai.com/docs/models/gpt-5-pro",
+    "display_name": "GPT-5 proVersion of GPT-5 that produces smarter\n                                                                                and more precise responses"
+  },
+  "o3-pro": {
+    "url": "https://platform.openai.com/docs/models/o3-pro",
+    "display_name": "o3-proVersion of o3 with more compute for\n                                                                                better responses"
+  },
+  "o3": {
+    "url": "https://platform.openai.com/docs/models/o3",
+    "display_name": "o3Reasoning model for complex tasks,\n                                                                                succeeded by GPT-5"
+  },
+  "o4-mini": {
+    "url": "https://platform.openai.com/docs/models/o4-mini",
+    "display_name": "o4-miniFast, cost-efficient reasoning model,\n                                                                                succeeded by GPT-5 mini"
+  },
+  "gpt-4.1-mini": {
+    "url": "https://platform.openai.com/docs/models/gpt-4.1-mini",
+    "display_name": "GPT-4.1 miniSmaller, faster version of GPT-4.1"
+  },
+  "gpt-4.1-nano": {
+    "url": "https://platform.openai.com/docs/models/gpt-4.1-nano",
+    "display_name": "GPT-4.1 nanoFastest, most cost-efficient version of\n                                                                                GPT-4.1"
+  },
+  "o1-pro": {
+    "url": "https://platform.openai.com/docs/models/o1-pro",
+    "display_name": "o1-proVersion of o1 with more compute for\n                                                                                better responses"
+  },
+  "computer-use-preview": {
+    "url": "https://platform.openai.com/docs/models/computer-use-preview",
+    "display_name": "computer-use-previewSpecialized model for computer use tool"
+  },
+  "gpt-4o-mini-search-preview": {
+    "url": "https://platform.openai.com/docs/models/gpt-4o-mini-search-preview",
+    "display_name": "GPT-4o mini Search PreviewFast, affordable small model for web\n                                                                                search"
+  },
+  "gpt-4o-search-preview": {
+    "url": "https://platform.openai.com/docs/models/gpt-4o-search-preview",
+    "display_name": "GPT-4o Search PreviewGPT model for web search in Chat\n                                                                                Completions"
+  },
+  "gpt-4.5-preview": {
+    "url": "https://platform.openai.com/docs/models/gpt-4.5-preview",
+    "display_name": "GPT-4.5 Preview (Deprecated)Deprecated large model."
+  },
+  "o3-mini": {
+    "url": "https://platform.openai.com/docs/models/o3-mini",
+    "display_name": "o3-miniA small model alternative to o3"
+  },
+  "o1": {
+    "url": "https://platform.openai.com/docs/models/o1",
+    "display_name": "o1Previous full o-series reasoning model"
+  },
+  "omni-moderation-latest": {
+    "url": "https://platform.openai.com/docs/models/omni-moderation-latest",
+    "display_name": "omni-moderationIdentify potentially harmful content in\n                                                                                text and images"
+  },
+  "o1-mini": {
+    "url": "https://platform.openai.com/docs/models/o1-mini",
+    "display_name": "o1-miniDeprecatedA small model alternative to o1"
+  },
+  "o1-preview": {
+    "url": "https://platform.openai.com/docs/models/o1-preview",
+    "display_name": "o1 PreviewDeprecatedPreview of our first o-series reasoning\n                                                                                model"
+  },
+  "gpt-4o": {
+    "url": "https://platform.openai.com/docs/models/gpt-4o",
+    "display_name": "GPT-4oFast, intelligent, flexible GPT model"
+  },
+  "gpt-4o-audio-preview": {
+    "url": "https://platform.openai.com/docs/models/gpt-4o-audio-preview",
+    "display_name": "GPT-4o AudioGPT-4o models capable of audio inputs\n                                                                                and outputs"
+  },
+  "gpt-4o-mini": {
+    "url": "https://platform.openai.com/docs/models/gpt-4o-mini",
+    "display_name": "GPT-4o miniFast, affordable small model for\n                                                                                focused tasks"
+  },
+  "gpt-4o-mini-audio-preview": {
+    "url": "https://platform.openai.com/docs/models/gpt-4o-mini-audio-preview",
+    "display_name": "GPT-4o mini AudioSmaller model capable of audio inputs\n                                                                                and outputs"
+  },
+  "gpt-4o-mini-realtime-preview": {
+    "url": "https://platform.openai.com/docs/models/gpt-4o-mini-realtime-preview",
+    "display_name": "GPT-4o mini RealtimeSmaller realtime model for text and\n                                                                                audio inputs and outputs"
+  },
+  "gpt-4o-realtime-preview": {
+    "url": "https://platform.openai.com/docs/models/gpt-4o-realtime-preview",
+    "display_name": "GPT-4o RealtimeModel capable of realtime text and\n                                                                                audio inputs and outputs"
+  },
+  "gpt-4-turbo": {
+    "url": "https://platform.openai.com/docs/models/gpt-4-turbo",
+    "display_name": "GPT-4 TurboAn older high-intelligence GPT model"
+  },
+  "babbage-002": {
+    "url": "https://platform.openai.com/docs/models/babbage-002",
+    "display_name": "babbage-002DeprecatedReplacement for the GPT-3 ada and\n                                                                                babbage base models"
+  },
+  "gpt-5.1-codex-mini": {
+    "url": "https://platform.openai.com/docs/models/gpt-5.1-codex-mini",
+    "display_name": "GPT-5.1 Codex miniSmaller, more cost-effective,\n                                                                                less-capable version of GPT-5.1-Codex"
+  },
+  "codex-mini-latest": {
+    "url": "https://platform.openai.com/docs/models/codex-mini-latest",
+    "display_name": "codex-mini-latestDeprecatedFast reasoning model optimized for the\n                                                                                Codex CLI"
+  },
+  "dall-e-2": {
+    "url": "https://platform.openai.com/docs/models/dall-e-2",
+    "display_name": "DALL\u00b7E 2DeprecatedOur first image generation model"
+  },
+  "dall-e-3": {
+    "url": "https://platform.openai.com/docs/models/dall-e-3",
+    "display_name": "DALL\u00b7E 3DeprecatedPrevious generation image generation\n                                                                                model"
+  },
+  "davinci-002": {
+    "url": "https://platform.openai.com/docs/models/davinci-002",
+    "display_name": "davinci-002DeprecatedReplacement for the GPT-3 curie and\n                                                                                davinci base models"
+  },
+  "gpt-3.5-turbo": {
+    "url": "https://platform.openai.com/docs/models/gpt-3.5-turbo",
+    "display_name": "GPT-3.5 TurboLegacy GPT model for cheaper chat and\n                                                                                non-chat tasks"
+  },
+  "gpt-4": {
+    "url": "https://platform.openai.com/docs/models/gpt-4",
+    "display_name": "GPT-4An older high-intelligence GPT model"
+  },
+  "gpt-4-turbo-preview": {
+    "url": "https://platform.openai.com/docs/models/gpt-4-turbo-preview",
+    "display_name": "GPT-4 Turbo PreviewDeprecatedAn older fast GPT model"
+  },
+  "gpt-4o-transcribe-diarize": {
+    "url": "https://platform.openai.com/docs/models/gpt-4o-transcribe-diarize",
+    "display_name": "GPT-4o Transcribe DiarizeTranscription model that identifies\n                                                                                who's speaking when"
+  },
+  "gpt-5.2-chat-latest": {
+    "url": "https://platform.openai.com/docs/models/gpt-5.2-chat-latest",
+    "display_name": "GPT-5.2 ChatGPT-5.2 model used in ChatGPT"
+  },
+  "gpt-5.1-chat-latest": {
+    "url": "https://platform.openai.com/docs/models/gpt-5.1-chat-latest",
+    "display_name": "GPT-5.1 ChatGPT-5.1 model used in ChatGPT"
+  },
+  "text-embedding-3-large": {
+    "url": "https://platform.openai.com/docs/models/text-embedding-3-large",
+    "display_name": "text-embedding-3-largeMost capable embedding model"
+  },
+  "text-embedding-3-small": {
+    "url": "https://platform.openai.com/docs/models/text-embedding-3-small",
+    "display_name": "text-embedding-3-smallSmall embedding model"
+  },
+  "text-embedding-ada-002": {
+    "url": "https://platform.openai.com/docs/models/text-embedding-ada-002",
+    "display_name": "text-embedding-ada-002Older embedding model"
+  },
+  "text-moderation-latest": {
+    "url": "https://platform.openai.com/docs/models/text-moderation-latest",
+    "display_name": "text-moderationDeprecatedPrevious generation text-only\n                                                                                moderation model"
+  },
+  "text-moderation-stable": {
+    "url": "https://platform.openai.com/docs/models/text-moderation-stable",
+    "display_name": "text-moderation-stableDeprecatedPrevious generation text-only\n                                                                                moderation model"
+  },
+  "tts-1": {
+    "url": "https://platform.openai.com/docs/models/tts-1",
+    "display_name": "TTS-1Text-to-speech model optimized for\n                                                                                speed"
+  },
+  "tts-1-hd": {
+    "url": "https://platform.openai.com/docs/models/tts-1-hd",
+    "display_name": "TTS-1 HDText-to-speech model optimized for\n                                                                                quality"
+  },
+  "whisper-1": {
+    "url": "https://platform.openai.com/docs/models/whisper-1",
+    "display_name": "WhisperGeneral-purpose speech recognition\n                                                                                model"
+  }
+}
